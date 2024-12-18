@@ -1,0 +1,367 @@
+(function () {
+    $(document).ready(function () {
+        hljs.highlightAll();
+        var homepage = location.pathname;
+        if (homepage == "/") {
+            $(".main-page-section").addClass("col-lg-12 p-0");
+            $(".nav-width.col-lg-3").addClass("d-none");
+            console.log("insid home");
+        } else {
+            $(".main-page-section").addClass("col-lg-9 content-main-page");
+            console.log("outsid home");
+        }
+
+        $("body").on("click", ".ds-navdropdown-header", function () {
+            if ($(this).hasClass("active")) {
+                $(this)
+                    .next()
+                    .slideToggle(400);
+                $(this).removeClass("active");
+                $(this)
+                    .children()
+                    .css("transition", "transform 0.2s linear");
+            } else {
+                $(this)
+                    .next()
+                    .slideToggle(400);
+                $(this).addClass("active");
+                $(this)
+                    .children()
+                    .css("transition", "transform 0.2s linear");
+            }
+        });
+
+        $(function () {
+            var current = location.pathname;
+            $(".nav-width .ds-navdropdown-body > .nav-link").each(function () {
+                var $this = $(this);
+                // if the current path is like this link, make it active
+                if ($this.attr("href").indexOf(current) !== -1 && current !== "/") {
+                    $this.addClass("active");
+
+                    if (
+                        $this
+                            .parent()
+                            .parent()
+                            .parent()
+                            .parent()
+                            .hasClass("about")
+                    ) {
+                        $(".nav-link.about").addClass("active");
+                    }
+                    if (
+                        $this
+                            .parent()
+                            .parent()
+                            .hasClass("styles")
+                    ) {
+                        $(".nav-link.styles").addClass("active");
+                    }
+                    if (
+                        $this
+                            .parent()
+                            .parent()
+                            .parent()
+                            .parent()
+                            .hasClass("patterns")
+                    ) {
+                        $(".nav-link.patterns").addClass("active");
+                    }
+                    if (
+                        $this
+                            .parent()
+                            .parent()
+                            .parent()
+                            .parent()
+                            .hasClass("components")
+                    ) {
+                        $(".nav-link.components").addClass("active");
+                    }
+                    if ($(window).width() > 767) {
+                        $this
+                            .parent()
+                            .parent()
+                            .parent()
+                            .parent()
+                            .children(1)
+                            .addClass("active");
+                        $this
+                            .parent()
+                            .parent()
+                            .parent()
+                            .parent()
+                            .children(2)
+                            .css("display", "block");
+                        $this
+                            .parent()
+                            .parent()
+                            .children(1)
+                            .addClass("active");
+                        $this
+                            .parent()
+                            .parent()
+                            .children(2)
+                            .css("display", "block");
+                    }
+                }
+            });
+        });
+
+        $(".sketch-button").click(function () {
+            $("#disclaimer-popup-window-Sketch").removeClass("d-none");
+            // const sketch = this.getAttribute('id');
+            // const sha = '{{ sha256Info['+sketch+'.zip]}}';
+            // const downloadLink = '/downloads/'+sketch+'.zip';
+            // $("#disclaimer-popup-window-Sketch").find('.ds-link').html(sha);
+            // $("#disclaimer-popup-window-Sketch").find('.btn-primary').attr('href',downloadLink);
+        });
+
+        $(".sketch-button-home").click(function () {
+            $("#disclaimer-popup-window-Sketch-home").removeClass("d-none");
+        });
+
+        $(".sketch-button-form").click(function () {
+            $("#disclaimer-popup-window-Sketch-form").removeClass("d-none");
+        });
+
+        $(".sketch-button-contact").click(function () {
+            $("#disclaimer-popup-window-Sketch-contact").removeClass("d-none");
+        });
+
+        $(".sketch-button-content").click(function () {
+            $("#disclaimer-popup-window-Sketch-content").removeClass("d-none");
+        });
+
+        $(".code-button").click(function () {
+            $("#disclaimer-popup-window-code").removeClass("d-none");
+        });
+
+        $(".brand-assets-button").click(function () {
+            $("#disclaimer-popup-window-brand-assets").removeClass("d-none");
+        });
+
+        $(".cancel-bnt").click(function () {
+            $(this)
+                .parent()
+                .parent()
+                .parent()
+                .parent()
+                .addClass("d-none");
+        });
+
+        $(".copytext-bnt").click(function () {
+            var element = $("#htmlcode");
+            var copyText = $(this)
+                .parent()
+                .next()
+                .text();
+            // var copyText = $("#code-text").text();
+            element.removeClass("d-none");
+            element.text(copyText);
+            element.select();
+            document.execCommand("copy");
+            element.addClass("d-none");
+            $(this)
+                .parent()
+                .children(0)
+                .show();
+
+            $(this)
+                .prev()
+                .delay(1000)
+                .hide(0);
+        });
+        $('.nav-item-login').on('click', () => $('#login-dropdown-menu').toggle());
+        if (document.title === 'Home Page') {
+            $('#login').on('click', function () {
+                console.log('Clicked')
+                $('#notifi-dropdown-menu').css('display', 'none');
+                $("nav").css("display", "none");
+                $("section").css("display", "none");
+                $("footer").css("display", "none");
+                $('#nafath-login-btn').css('display', 'block');
+                $('#nafath-login').css('display', 'block');
+                $('#nafath-otp-btn').css('display', 'none');
+                $('#nafath-otp').css('display', 'none');
+              
+            });
+
+
+            $('#nafath-login-btn').on('click', function () {
+                console.log('Clicked')
+                $('#nafath-login-btn').css('display', 'none');
+                $('#nafath-login').css('display', 'none');
+                $('#nafath-otp-btn').css('display', 'block');
+                $('#nafath-otp').css('display', 'block');
+            });
+
+            $('#nafath-otp-btn').click(function () {
+                console.log('Clicked');
+                $('#nafath-login-btn').css('display', 'none');
+                $('#nafath-login').css('display', 'none');
+                $('#nafath-otp-btn').css('display', 'none');
+                $('#nafath-otp').css('display', 'none');
+                $("nav").css("display", "block");
+                $("section").css("display", "block");
+                $("footer").css("display", "block");
+                $('#login-dropdown-menu').css('display', 'none');
+                document.body.innerHTML
+                    = document.body.innerHTML
+                    .replace("Login", "Username");
+            });
+        }
+
+
+        $('.nav-item-notifi').on('click', () => $('#notifi-dropdown-menu').toggle());
+        if (document.title === 'Home Page') {
+            $('#login').on('click', function () {
+                console.log('Clicked')
+                $('#login-dropdown-menu').css('display', 'none');
+                $("nav").css("display", "none");
+                $("section").css("display", "none");
+                $("footer").css("display", "none");
+                $('#nafath-login-btn').css('display', 'block');
+                $('#nafath-login').css('display', 'block');
+                $('#nafath-otp-btn').css('display', 'none');
+                $('#nafath-otp').css('display', 'none');
+                
+            });
+
+
+            $('#nafath-login-btn').on('click', function () {
+                console.log('Clicked')
+                $('#nafath-login-btn').css('display', 'none');
+                $('#nafath-login').css('display', 'none');
+                $('#nafath-otp-btn').css('display', 'block');
+                $('#nafath-otp').css('display', 'block');
+            });
+
+            $('#nafath-otp-btn').click(function () {
+                console.log('Clicked');
+                $('#nafath-login-btn').css('display', 'none');
+                $('#nafath-login').css('display', 'none');
+                $('#nafath-otp-btn').css('display', 'none');
+                $('#nafath-otp').css('display', 'none');
+                $("nav").css("display", "block");
+                $("section").css("display", "block");
+                $("footer").css("display", "block");
+                $('#notifi-dropdown-menu').css('display', 'none');
+               
+                document.body.innerHTML
+                    = document.body.innerHTML
+                    .replace("Login", "Username");
+            });
+        }
+
+        
+
+        //Feedback YES/NO buttons
+        $("#feedback-yes-button").click(function () {
+            $("#feedback-yes-option").removeClass("hide");
+            $("#submit-btn-container").removeClass("hide");
+            $("#feedback-no-option").addClass("hide");
+            $(".feedbacks").addClass("hide");
+            $("#feedback-close-btn").removeClass("hide");
+        });
+        $("#feedback-no-button").click(function () {
+            $("#feedback-no-option").removeClass("hide");
+            $("#submit-btn-container").removeClass("hide");
+            $("#feedback-yes-option").addClass("hide");
+            $(".feedbacks").addClass("hide");
+            $("#feedback-close-btn").removeClass("hide");
+        });
+        $("#feedback-submit-button").click(function () {
+            $("#feedback-no-option").addClass("hide");
+            $("#submit-btn-container").addClass("hide");
+            $("#feedback-yes-option").addClass("hide");
+            $("#feedback-header").addClass("hide");
+            $("#submit-container").removeClass("hide");
+            $(".feedbacks").addClass("hide");
+            $("#feedback-close-btn").addClass("hide");
+        });
+        //feedback close button
+        $("#feedback-close-btn").click(function () {
+            $("#feedback-close-btn").addClass("hide");
+            $("#feedback-no-option").addClass("hide");
+            $("#feedback-yes-option").addClass("hide");
+            $("#submit-btn-container").addClass("hide");
+            $(".feedbacks").removeClass("hide");
+
+        });
+
+        //Mobile Filters Open
+        $("#btn-mobile-filters").click(function () {
+            $("#mobile-filters").css("transform", "translateY(0)")
+        });
+        $("#close-mobile-filters-btn").click(function () {
+            $("#mobile-filters").css("transform", "translateY(2000px)")
+        });
+    });
+})();
+
+
+//Code tabs function
+$('#htmlClicked').on('click', function () {
+    openTab(event, 'HTML');
+});
+
+$('#jsClicked').on('click', function () {
+    openTab(event, 'JavaScript');
+});
+
+function openTab(evt, LangName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(LangName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+
+//open and close chatbot
+
+$('.chatbot-demo').on('click', function () {
+    openForm()
+})
+
+$('#close-chatbot').on('click', function () {
+    closeForm()
+})
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+$("#open-search").on('click', function () {
+    console.log('clicked')
+    $("#search-modal").css("display", "block");
+    $("nav").css("display", "none");
+    $("section").css("display", "none");
+    $("footer").css("display", "none");
+})
+
+$("#close-search").on('click', function () {
+    console.log('clicked')
+    $("#search-modal").css("display", "none");
+    $("#onboarding-card").css("display", "none");
+    $("nav").css("display", "block");
+    $("section").css("display", "block");
+    $("footer").css("display", "block");
+})
+
+$(window).ready(function () {
+    console.log("loading")
+
+    $("#onboarding-card").fadeIn(1500).delay(4000).fadeOut(1500);
+})
+

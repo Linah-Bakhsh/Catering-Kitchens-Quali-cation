@@ -1,0 +1,106 @@
+
+.depart {
+  font-family: "GE SS Unique";
+  font-weight: 00;
+  font-size: 16px !important;
+  text-align: center;
+  color: #323639;
+
+}
+
+
+.title {
+  font-family: "GE SS Unique";
+  font-weight: bold;
+  font-size: 24px;
+  text-align: right;
+  color: #323639;
+
+}
+
+
+.s-title {
+  font-family: "GE SS Unique";
+  font-weight: bold;
+  font-size: 8px;
+  text-align: right;
+  color: #323639;
+
+
+}
+
+.border-b {
+  border: 0.5px solid #a1a1a1;
+}
+
+.text-d {
+
+  font-weight: bold !important;
+  font-size: 16px;
+
+  color: #364258;
+
+}
+
+
+.table-bordered-custom tr:nth-child(odd) {
+  background-color: #f6f6f6;
+  /* لون الصفوف الفردية */
+}
+
+.table-bordered-custom tr:nth-child(even) {
+  background-color: white;
+  /* لون الصفوف الزوجية */
+}
+
+.table-bordered-custom tr {
+  border: 0.5px solid #a1a1a1 !important;
+}
+
+.table-bordered-custom td,
+.table-bordered-custom th {
+  border: none !important;
+  /* Remove default borders */
+}
+
+.image-container {
+          position: relative;
+          display: inline-block; /* لتجنب التمدد الكامل */
+          float: left; /* محاذاة الصورة إلى اليسار */
+          margin-right: 20px; /* إضافة مسافة إلى اليمين */
+      }
+
+.image-container img {
+  display: block;
+  /* لإزالة المسافة السفلية */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 86%;
+  /* وضع النص في منتصف الصورة */
+  left: 50%;
+  /* وضع النص في منتصف الصورة */
+  transform: translate(-50%, -50%);
+  /* لتحريك النص إلى مركز الصورة */
+  color: #297dc7;
+  /* لون النص */
+  font-size: 24px;
+  /* حجم النص */
+  z-index: 1;
+  /* رفع مستوى النص فوق الصورة */
+  font-family: "Microsoft Uighur" !important;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 23px;
+  text-align: left;
+}
+
+.green-bar {
+          background-color: #2F544F;
+          height: 400px;
+          width: 100%; /* لتغطية العرض الكامل */
+          display: block; /* التأكد من أن الـ div يحتفظ بمساحته */
+          padding-bottom: 40px;
+          margin-bottom: 60px;
+      }

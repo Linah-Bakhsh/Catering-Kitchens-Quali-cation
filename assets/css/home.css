@@ -1,0 +1,312 @@
+.ds-tab-accordion {
+    max-width: none !important;
+}
+
+
+.bg-welcome {
+
+    height: auto;
+    padding-top: 6% !important;
+
+    background-color: hsla(171, 32%, 24%, 1);
+    background-image: 
+    radial-gradient(at 63% 90%, hsla(171, 28%, 25%, 1) 0px, transparent 50%), 
+    radial-gradient(at 0% 100%, hsla(168, 79%, 7%, 1) 0px, transparent 40%), 
+    radial-gradient(at 100% 110%, hsla(40, 65%, 53%, 1) 0px, transparent 50%), 
+    radial-gradient(at 100% 4%, hsla(168, 79%, 7%, 1) 0px, transparent 30%), 
+    radial-gradient(at 35% 51%, hsla(171, 32%, 24%, 1) 0px, transparent 50%), 
+    radial-gradient(at 7% 11%, hsla(180, 45%, 12%, 1) 0px, transparent 50%), 
+    radial-gradient(at 90% 8%, hsla(171, 28%, 25%, 1) 0px, transparent 50%);
+}
+
+
+.img-user {
+    float: right;
+    margin: 0rem 0rem 0rem 1.5rem;
+}
+
+
+
+.user-data-item {
+    border-radius: 15px;
+    background: #f8f8f8 !important;
+    padding: .5rem 3rem .5rem 3rem;
+    margin: 1rem;
+}
+
+.user-data {
+
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    width: fit-content;
+    margin: 0rem !important;
+
+
+
+}
+
+
+.box-shadow {
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.float-star {
+    float: right;
+}
+
+.num {
+    font-size: 30px !important;
+    align-items: end;
+
+}
+
+.card-icon {
+    font-size: 50px !important;
+    vertical-align: middle !important;
+
+}
+
+.nav-tabs>.nav-link {
+
+    border-radius: 10px 10px 0px 0px !important;
+
+    width: 50%;
+
+
+}
+
+.nav-link.active.serv {
+    border-top: #eac66c solid 10px !important;
+}
+
+.tab-content.serv {
+    border-top: none !important;
+    border: #dee2e6 solid 0.5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.text-right {
+    text-align-last: right;
+}
+
+.btn-secondary {
+    font-size: 16px !important;
+
+}
+
+
+.text-gray {
+    color: #B1B1B1 !important;
+}
+
+.card-item {
+    text-decoration: none !important;
+
+
+}
+
+
+/* Start nav bar scrolling  change color */
+
+.navbar-default{
+    transition:500ms ease;
+     
+  }
+  
+  .text-nav{
+      transition:500ms ease;
+     
+  }
+  
+  .ds-header{
+      background: none;
+  }
+  .navbar-default.scrolled{
+    background: #fff;
+   
+  }
+  
+  
+  
+  a.with-icon>i.text-nav.scrolled-text{
+      color: var(--green)  !important;
+  }
+  
+  a.text-nav{
+      color: #fff !important;
+  }
+  
+  .bi.text-nav::before{
+      color: #fff !important;
+  }
+  .bi.text-nav.scrolled-text::before{
+      color: var(--green) !important;
+  }
+  .text-nav{
+      color: #fff ;
+  }
+  
+  .text-nav.scrolled-text{
+      color: #000000 !important;
+  } 
+  
+  /* nav item  hover green  */
+  ul>li>a.main-nav:hover{
+      background-color: #5aab5c30 !important;
+       
+  }
+  /* nav item  hover light  */
+  ul>li>a.main-nav.scrolled-text:hover{
+      background-color: #EFEFEF !important;
+       
+  }
+  
+  /* icon green when scroll */
+  a.font-weight-bold.text-nav.scrolled-text{
+      color: var(--green) !important ;
+  }
+  
+  /* show green logo */
+  img.green-nav-logo.text-nav.scrolled-text{
+      display: block;
+  }
+  /* hide green logo */
+  img.light-nav-logo.text-nav.scrolled-text{
+      display: none;
+  }
+
+  .grow {
+    transition: transform 0.3s ease-in-out;
+    /* Added transition for smooth effect */
+  }
+
+  .grow:hover {
+    transform: scale(1.03) !important ;
+  }
+
+
+
+  .ds-service-card {
+    width: 250px;
+    height: 250px !important;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    position: relative;
+  }
+
+  .text {
+    font-size: 18px !important;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .ico {
+    font-size: 50px !important;
+    color: #1E6144 !important;
+    margin-right: 20px;
+    
+
+  }
+
+
+  /* Style for the circular background */
+  .circle {
+    width: 50px;
+    height: 60px;
+    background-color: #E3F8E9;
+    border-radius: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Hover effect */
+  .ds-service-card:hover .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    /* Ensures a smooth transition */
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .ds-service-card {
+ 
+    height: 180px !important;
+  
+  }
+
+  .text {
+    font-size: 16px !important;
+    bottom: 10px;
+    left: 0;
+ 
+  }
+
+
+  }
+  
+@media only screen and (max-width: 990px) {
+
+
+    .bg-welcome{
+        background-position: 0px 80px;
+        
+    }
+    .ds-header{
+        background: #1e6144;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .ds-header{
+        background: #1e6144;
+    }
+
+     .bg-welcome{
+        background-position: 0px 80px;
+        
+    }
+    .card-icon {
+        font-size: 30px !important;
+    }
+
+    .num {
+        font-size: 35px !important;
+
+    }
+
+    .font-body-2 {
+        font-size: 14px !important;
+    }
+
+    .img-user {
+        float: none;
+        text-align: center !important;
+    }
+
+    .welcom-ms {
+        text-align: center !important;
+    }
+
+    .panel-body{
+        padding: 0.5rem !important;
+    }
+
+    .box-shadow.p-md-5{
+        border-radius: none;
+        box-shadow:none;
+        padding: 0px !important;
+    }
+
+}

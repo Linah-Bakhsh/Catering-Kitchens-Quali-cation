@@ -1,0 +1,465 @@
+.modal-header {
+  background: var(--green);
+}
+
+.modal-header {
+  background: var(--green);
+}
+
+
+.logo-type{
+  width: 275px;
+  padding-left: 3rem  ;
+  padding-right: 3rem  ;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1030;
+  width: 100%;
+}
+
+.name-system {
+  font-weight: bold;
+  font-size: 24px !important;
+  text-align: center !important;
+  color: #34a174 !important;
+  text-decoration: none;
+}
+
+.border-graylight {
+  width: auto !important  ;
+}
+  .name-system2 {
+    font-weight: bold;
+    font-size: 24px !important;
+    text-align: center !important;
+    color: var(--green) !important;
+    text-decoration: none;
+  }
+
+  .border-greenlight {
+    border: 7px solid #34a174 !important;
+    width: 102px !important;
+    margin-top: -25px !important;
+  }
+
+  .border-graylight {
+    margin-top: 3rem !important;
+    border: 0 !important;
+    border-top: 2px solid #f1f1f1 !important;
+    width: 772px;
+  }
+
+  .border-yellow {
+    border: 2px solid #efd18a !important;
+    width: 60px !important;
+    margin-top: -20px !important;
+  }
+
+  .border-graylight2 {
+    margin-top: 3rem !important;
+    border: 0 !important;
+    border-top: 4px solid #f1f1f1 !important;
+    width: 276px !important;
+  }
+
+  .login-type {
+    padding: 2rem;
+    max-width: 356px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+    border-top: solid 10px var(--green);
+  }
+
+  .bg-graywhite {
+    background-color: #f8f8f8 !important;
+  }
+  .grow {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .grow:hover {
+    transform: scale(1.1);
+  }
+ 
+
+
+.input-authenti {
+  text-align: center;
+  font-size: 18px;
+  width: 80px;
+  height: 80px !important;
+  border-radius: 20px !important;
+  background: #f7f7f7;
+  border: 0.2px solid #d6d6d6;
+}
+
+.text-greenlight {
+  color: var(--primary) !important;
+}
+
+.input-authenti:focus {
+  background-color: #fff;
+  border-color: #89d3b5;
+  box-shadow: 0 0 0 0.2rem rgba(60, 160, 120, 0.25);
+  border: none !important;
+  outline-color: var(--orange);
+}
+
+.logo-white {
+  width: 55px;
+
+  border-right: solid 1px #fff !important;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1030;
+  width: 100%;
+}
+
+.name-system {
+  font-weight: bold;
+  font-size: 24px !important;
+  text-align: center !important;
+  color: #34a174 !important;
+  text-decoration: none;
+}
+
+.name-system2 {
+  font-weight: bold;
+  font-size: 24px !important;
+  text-align: center !important;
+  color: var(--green) !important;
+  text-decoration: none;
+}
+
+.border-greenlight {
+  border: 7px solid #34a174 !important;
+  width: 102px !important;
+  margin-top: -25px !important;
+}
+
+.border-graylight {
+  margin-top: 3rem !important;
+  border: 0 !important;
+  border-top: 2px solid #f1f1f1 !important;
+  width: 772px;
+}
+
+.border-yellow {
+  border: 2px solid #efd18a !important;
+  width: 60px !important;
+  margin-top: -20px !important;
+}
+
+.border-graylight2 {
+  margin-top: 3rem !important;
+  border: 0 !important;
+  border-top: 4px solid #f1f1f1 !important;
+  width: 276px !important;
+}
+
+.login-type {
+  padding: 2rem;
+  max-width: 356px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+  border-top: solid 10px var(--green);
+}
+
+.bg-graywhite {
+  background-color: #f8f8f8 !important;
+}
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+body {
+  
+  background-color: #f8f8f8;
+    background-image: url(./assets/img/pattern.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.vstack {
+  padding: 3rem;
+}
+
+.yellow-border{
+  border: 3px solid #DFBD69 !important;
+  border-radius: 20px;
+   
+}
+
+.ds-display-font{
+  font-size: 42px !important;
+}
+
+.login-form {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 850px;
+  height: 850;
+  max-width: 736px;
+  width: auto;
+  height: auto;
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.07));
+  background-color: white;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.btn-back:hover {
+  opacity: 0.5 !important;
+  cursor: pointer;
+}
+
+.btn-back {
+  max-width: 100px;
+}
+
+.ds-text-input {
+  border-right: #2F544F solid 5px !important;
+  background: #ffffff !important;
+  height: 70px !important;
+
+  filter: none !important;
+  border-left: 0.5px solid #c7c7c7 !important;
+
+  border-bottom: 0.5px solid #c7c7c7 !important;
+
+  border-top: 0.5px solid #c7c7c7 !important;
+
+  border-radius: 10px 0px 0px 10px !important;
+}
+
+.ds-input-label {
+  font-size: 20px !important;
+  color: #242424 !important;
+  font-weight: 500 !important;
+}
+
+.btn-login {
+  width: -webkit-fill-available;
+  height: 70px;
+}
+
+.btn-login-blue {
+  width: -webkit-fill-available;
+  height: 70px;
+  background: #092e8f !important ;
+  color: #fff;
+}
+
+.btn-login-blue:hover {
+  background: #0d46ab !important;
+  color: #fff;
+}
+
+.btn {
+  font-size: 20px !important;
+}
+
+.nic {
+  font-size: 20px !important;
+}
+
+.banner {
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* للتأكد من عدم ظهور أجزاء غير مرغوب فيها من الخلفية */
+  background-color: hsla(171, 32%, 24%, 1);
+  background-image:
+    radial-gradient(at 63% 90%, hsla(171, 28%, 25%, 1) 0px, transparent 50%),
+    radial-gradient(at 19% 100%, hsla(168, 79%, 7%, 1) 0px, transparent 50%),
+    radial-gradient(at 92% 88%, hsla(40, 65%, 53%, 1) 0px, transparent 50%),
+    radial-gradient(at 78% 14%, hsla(171, 28%, 25%, 1) 0px, transparent 50%),
+    radial-gradient(at 35% 51%, hsla(171, 32%, 24%, 1) 0px, transparent 50%),
+    radial-gradient(at 7% 11%, hsla(180, 45%, 12%, 1) 0px, transparent 50%),
+    radial-gradient(at 90% 8%, hsla(171, 28%, 25%, 1) 0px, transparent 50%);
+
+  /* إعداد الأنيميشن */
+  animation: gradientAnimation 10s ease infinite;
+}
+
+/* أنيميشن التدرج اللوني */
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+
+
+.banner-blue {
+  background-image: url(../img/bg-lines.svg),
+    linear-gradient(#0d46ab 0%, rgba(3, 16, 107, 0.98) 100%);
+  background-repeat: round;
+  background-size: cover;
+}
+
+.syst-title {
+  background: #388967;
+  width: max-content;
+  border-radius: 20px;
+  color: #eac66c;
+  font-size: 28px !important;
+  font-weight: 500;
+}
+
+.syst-title-blue {
+  background: #183685;
+  width: max-content;
+  border-radius: 20px;
+  color: #eac66c;
+  font-size: 28px !important;
+  font-weight: 500;
+}
+
+.btn-secondar {
+  background-color: #fff !important;
+  border: solid 1px #1e6144 !important;
+}
+
+.btn-secondar:hover {
+  background-color: #f8f8f8 !important;
+}
+
+.code{
+
+  border-right: 0.5px solid #c7c7c7 !important;
+  border-radius: 10px  !important;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+
+/* screen size mobile responsive*/ 
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    overflow:visible;
+  }
+
+  .input-authenti {
+   
+    width: 40px;
+    height: 40px !important;
+ 
+  }
+
+
+
+  .banner {
+    display: none;
+  }
+  .animated-element[data-aos] {
+    /* إلغاء الأنيميشن عن طريق استخدام */
+    /* display: none; أو إزالة البيانات الخاصة بالأنيميشن */
+    display: none;
+  }
+  .ds-input-label{
+    font-size: 16px !important;
+  }
+  .login-form {
+    margin-top: 50px !important;
+    margin-bottom: auto !important;
+
+    width: auto !important;
+    height: auto !important;
+ 
+    filter: none !important;
+    background-color: white !important;
+
+    border-radius: 0px !important;
+  }
+  .btn-login{
+    font-size: 16px !important;
+     
+
+    
+  }
+  .btn-login-blue{
+    font-size: 16px !important;
+
+  }
+  .vstack {
+    padding: 0rem !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+  }
+
+  .vstack {
+    padding: 0rem !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+  }
+
+
+
+  .border-graylight {
+    width: auto !important  ;
+  }
+
+  .logo-type{
+    width: 150px !important;
+    padding: 0.5rem !important;
+  }
+  
+
+  .fixed-footer {
+    position: static !important;
+  }
+
+  
+.btn-back  {
+   
+  max-width: 100px !important;
+   
+  }
+
+  .animate__fadeInUp{
+    animation-name:none !important;
+  }
+
+  .nic{
+    font-size: 14px !important;
+  }
+
+  .p-2.py-3{
+    padding-top: 0px !important;
+  }
+
+  .pt-md-5.pt-5.mt-5 {
+    padding-top: .3rem !important;
+    padding-bottom: .4rem !important;
+
+  }
+
+}

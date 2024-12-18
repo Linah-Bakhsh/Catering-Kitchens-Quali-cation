@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+  <title> طلب تأهيل </title>
+
+  <!-- basic css -->
+  <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/order.css" rel="stylesheet" />
+  <link href="../assets/css/detail.css" rel="stylesheet" />
+
+
+  <!-- Link to animation CSS -->
+  <link href="../assets/css/animate.min.css" rel="stylesheet" />
+
+  <!-- Link to Bootstrap Icons -->
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+
+  <!-- Link to AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="../assets/css/aos.css" />
+
+</head>
+ 
+
+<body>
+  <!-- Start  navigation bar -->
+  <nav class="navbar navbar-expand-lg ds-header sticky bg-white">
+    <div class="container">
+      <div class="d-flex">
+        <!-- Button for toggling the navigation menu -->
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+          data-target="#navb">
+          <i class="ds-menu"></i>
+          <!-- Menu icon -->
+          <div class="md-hide text-primary">
+            <i class="ds-x-circle"></i> اغلاق
+            <!-- Close icon for small screens -->
+          </div>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/white logo.svg" alt="logo" class="green-nav-logo">
+          <!-- Green logo -->
+          <img src="../assets/img/logo.svg" width="120" class="light-nav-logo" alt="logo">
+          <!-- Light logo -->
+        </a>
+      </div>
+
+      <div class="d-flex flex-row order-3" id="right-nav">
+        <ul class="navbar-nav flex-row">
+          <!-- List language for navigation -->
+          <li class="nav-item mobile-hide">
+            <a class="font-weight-bold nav-link" href="javascript:void(0)"> </a>
+          </li>
+
+          <!-- user botton-->
+          <li class="nav-item nav-item-login">
+            <a class="nav-link with-icon main-nav text-nav with-icon">
+              <!-- User icon (green) -->
+              <i class="bi bi-person-fill text-green"></i>
+              <!-- User icon (white) -->
+              <p class="mobile-hide text-primary"> مطبخ اعاشة </p>
+            </a>
+            <!-- user menu-->
+            <div id="login-dropdown-menu" class="dropdown-menu dropdown-menu-login p-3" style="display: none;">
+              <ul class="list-group list-group-flush">
+
+                <a href="../login_type.html" class="main-nav list-group-item list-group-item-action logout">
+                  <i class="bi bi-box-arrow-left"></i>
+                  تسجيل الخروج
+                </a>
+              </ul>
+            </div>
+            <!--End user menu-->
+          </li>
+          <!--End user botton-->
+
+          <!-- notification botton-->
+          <li class="nav-item nav-item-notifi">
+            <a class="nav-link with-icon">
+              <i class="bi bi-bell-fill text-green"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">
+                9+ </span>
+
+              <p class="mobile-hide">الإشعارات</p>
+            </a>
+            <!-- notification menu-->
+            <div id="notifi-dropdown-menu" class="dropdown-menu dropdown-menu-notifi p-3" style="display: none;">
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex flex-row">
+                    <img class="p-2" src="../assets/img/proggres.svg" alt="">
+                    <div class="p-2" style="text-align: right;">
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">
+                          <b>تم اضافة طلب جديد برقم تسلسلي</b>
+                          <span class="text-primary"> #2254352</span>
+                        </p>
+                      </div>
+                      <small class="font-body-5"> منذ ساعه </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End notification menu-->
+          </li>
+          <!-- End notification botton-->
+        </ul>
+      </div>
+
+      <!--  navigation menu-->
+
+      <div class="collapse navbar-collapse order-2" id="navb">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle " href="home.html" id="navbarDropdown4">
+              الرئيسية
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
+
+      <!--  End navigation menu-->
+    </div>
+  </nav>
+  <!-- End navigation bar -->
+  <div style="margin-top: 80px;">
+    <nav class="ds-nav mobile-hide">
+      <div class="container ">
+        <ol class="breadcrumb">
+
+          <li class="breadcrumb-item">
+            <a href="home.html"> الرئيسية </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="new-order.html"> طلب جديد </a>
+          </li>
+
+        </ol>
+      </div>
+    </nav>
+  </div>
+
+  <section class="agencies-directory" style="background: #3ca0780d;">
+    <div class="container py-5 ">
+      <div class=" welcom-ms">
+        <!-- welcome message  -->
+        <h3 class="  "> طلب تأهيل مطبخ الأمل </h3>
+
+        <!-- paragraph   -->
+        <p class="  "> نموذج تأهيل المطبخ لإعاشة الحجاج و المعتمرين </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Start  main content -->
+  <main class="container-fluid  p-0 top-m">
+    <div class="container  px-4">
+
+
+      <div class="row ">
+
+
+
+        <div class="col-lg-3 py-5">
+          <!-- Header for the application process -->
+          <h4 class="mb-3 bold"> إجراءات الطلب </h4>
+
+          <div class="ds-navigation-menu">
+            <ul>
+              <!-- Step 1: Main Application Data -->
+              <li id="stepp1" class="active">
+                <h6 class="font-body-2 text-regular">
+                  بيانات الطلب الرئيسية
+                </h6>
+              </li>
+              <!-- Step 2: Attachments -->
+              <li id="stepp2">
+                <h6 class="font-body-2 text-regular">
+                  المرفقات
+                </h6>
+              </li>
+              <!-- Step 3: Submit Application -->
+              <li id="stepp3"> <!-- Changed id to stepp3 for uniqueness -->
+                <h6 class="font-body-2 text-regular">
+                  تقديم الطلب
+                </h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div id="step1" class="step-content active col-lg-9 p-md-5 pb-5">
+          <div class="row px-md-4">
+            <!-- Shop Name -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label"> اسم المحل </p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" style="height: auto;" id="label9"
+                placeholder="الأمل لمطبخ الإعاشة" disabled="disabled">
+            </div>
+
+            <!-- Commercial Registration Number -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label"> رقم السجل التجاري </p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" type="text" style="height: auto;" id="label9"
+                placeholder="3242343" disabled="disabled">
+            </div>
+
+            <!-- License Number -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label"> رقم الرخصة </p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" type="text" style="height: auto;" id="label9"
+                placeholder="3525623652" disabled="disabled">
+            </div>
+
+            <!-- License Status -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label"> حالة الرخصة </p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" type="text" style="height: auto;" id="label9"
+                placeholder="سارية" disabled="disabled">
+            </div>
+
+            <!-- Municipality -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label"> البلدية </p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" style="height: auto;" id="label9"
+                placeholder="بلدية الشوقية" disabled="disabled">
+            </div>
+
+            <!-- Neighborhood -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label"> الحي</p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" type="text" style="height: auto;" id="label9"
+                placeholder="الشوقية" disabled="disabled">
+            </div>
+
+            <!-- Street -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label"> الشارع </p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" type="text" style="height: auto;" id="label9"
+                placeholder="الدائري الثالث" disabled="disabled">
+            </div>
+
+            <!-- Location -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label"> الموقع </p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" type="text" style="height: auto;" id="label9"
+                placeholder="3242343" disabled="disabled">
+            </div>
+
+            <!-- Selected Location Button -->
+            <div class="col-lg-6 my-3 data-item">
+              <p class="data-label">
+                الموقع المحدد
+                <samp class="text-danger">*</samp>
+              </p>
+              <button id="locationButton" class="btn btn-outline-primary">
+                <i class="bi bi-geo-alt"></i> تحديد موقع المطبخ
+              </button>
+            </div>
+          </div>
+
+          <!-- Pagination Controls -->
+          <div class="ds-pagination">
+            <div class="pagination-bar">
+              <div class="d-flex justify-content-between mb-3 px-md-4" style="margin-bottom: 12px;">
+                <div class="previous">
+                  <button
+                    class="btn btn-secondary btn-icon btn-icon-left d-flex justify-content-between align-items-center"
+                    tabindex="0" role="button" aria-disabled="false" aria-label="Previous page" rel="prev">
+                    <i class="ds-chevron-left"></i>
+                    <span>السابق</span>
+                  </button>
+                </div>
+
+                <div class="next d-md-block">
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-right d-flex justify-content-between align-items-center"
+                    onclick="nextStep(1)" tabindex="0" role="button" aria-disabled="false" aria-label="Next page"
+                    rel="next">
+                    <span>التالي</span>
+                    <i class="ds-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="step2" class="step-content col-lg-9 p-md-5 pb-5">
+          <div class="row px-md-4">
+            <div class="container mt-5">
+
+              <!-- Section for uploading municipal license -->
+              <p> رخصة البلدية </p>
+              <div class="d-flex bg-graylight rounded p-2">
+                <input type="file" id="fileInput1" style="display: none;" onchange="updateFileName(this, 'fileInfo1')">
+                <label for="fileInput1" class="btn btn-outline-secondary btn-sm rounded py-0 px-3 m-0">
+                  <p class="m-0 btn-up">رفع
+                    <i class="bi bi-upload" style="font-size: 18px;"></i>
+                  </p>
+                </label>
+                <div class="file-info mx-3 my-0" id="fileInfo1" style="display: none;">
+                  <p class="m-0" id="fileName1">اسم الملف</p>
+                  <span class="remove-file" onclick="removeFile('fileInput1', 'fileInfo1')">✖</span>
+                </div>
+              </div>
+              <hr>
+
+              <!-- Section for uploading commercial register -->
+              <p class="my-3"> سجل تجاري </p>
+              <div class="d-flex bg-graylight rounded p-2">
+                <input type="file" id="fileInput2" style="display: none;" onchange="updateFileName(this, 'fileInfo2')">
+                <label for="fileInput2" class="btn btn-outline-secondary btn-sm rounded py-0 px-3 m-0">
+                  <p class="m-0 btn-up">رفع
+                    <i class="bi bi-upload" style="font-size: 18px;"></i>
+                  </p>
+                </label>
+                <div class="file-info mx-3 my-0" id="fileInfo2" style="display: none;">
+                  <p class="m-0" id="fileName2">اسم الملف</p>
+                  <span class="remove-file" onclick="removeFile('fileInput2', 'fileInfo2')">✖</span>
+                </div>
+              </div>
+              <hr>
+
+              <!-- Repeat similar sections for other documents -->
+              <p class="my-3"> صورة الهوية او الوكالة </p>
+              <div class="d-flex bg-graylight rounded p-2">
+                <input type="file" id="fileInput3" style="display: none;" onchange="updateFileName(this, 'fileInfo3')">
+                <label for="fileInput3" class="btn btn-outline-secondary btn-sm rounded py-0 px-3 m-0">
+                  <p class="m-0 btn-up">رفع
+                    <i class="bi bi-upload" style="font-size: 18px;"></i>
+                  </p>
+                </label>
+                <div class="file-info mx-3 my-0" id="fileInfo3" style="display: none;">
+                  <p class="m-0" id="fileName3">اسم الملف</p>
+                  <span class="remove-file" onclick="removeFile('fileInput3', 'fileInfo3')">✖</span>
+                </div>
+              </div>
+              <hr>
+
+              <p class="my-3"> شهادة الهاسب او عقد الاستشاري </p>
+              <div class="d-flex bg-graylight rounded p-2">
+                <input type="file" id="fileInput4" style="display: none;" onchange="updateFileName(this, 'fileInfo4')">
+                <label for="fileInput4" class="btn btn-outline-secondary btn-sm rounded py-0 px-3 m-0">
+                  <p class="m-0 btn-up">رفع
+                    <i class="bi bi-upload" style="font-size: 18px;"></i>
+                  </p>
+                </label>
+                <div class="file-info mx-3 my-0" id="fileInfo4" style="display: none;">
+                  <p class="m-0" id="fileName4">اسم الملف</p>
+                  <span class="remove-file" onclick="removeFile('fileInput4', 'fileInfo4')">✖</span>
+                </div>
+              </div>
+              <hr>
+
+              <p class="my-3"> تصريح الدفاع المدني </p>
+              <div class="d-flex bg-graylight rounded p-2">
+                <input type="file" id="fileInput5" style="display: none;" onchange="updateFileName(this, 'fileInfo5')">
+                <label for="fileInput5" class="btn btn-outline-secondary btn-sm rounded py-0 px-3 m-0">
+                  <p class="m-0 btn-up">رفع
+                    <i class="bi bi-upload" style="font-size: 18px;"></i>
+                  </p>
+                </label>
+                <div class="file-info mx-3 my-0" id="fileInfo5" style="display: none;">
+                  <p class="m-0" id="fileName5">اسم الملف</p>
+                  <span class="remove-file" onclick="removeFile('fileInput5', 'fileInfo5')">✖</span>
+                </div>
+              </div>
+              <hr>
+
+              <p class="my-3"> عقد نظافة مكافحة الحشرات </p>
+              <div class="d-flex bg-graylight rounded p-2">
+                <input type="file" id="fileInput6" style="display: none;" onchange="updateFileName(this, 'fileInfo6')">
+                <label for="fileInput6" class="btn btn-outline-secondary btn-sm rounded py-0 px-3 m-0">
+                  <p class="m-0 btn-up">رفع
+                    <i class="bi bi-upload" style="font-size: 18px;"></i>
+                  </p>
+                </label>
+                <div class="file-info mx-3 my-0" id="fileInfo6" style="display: none;">
+                  <p class="m-0" id="fileName6">اسم الملف</p>
+                  <span class="remove-file" onclick="removeFile('fileInput6', 'fileInfo6')">✖</span>
+                </div>
+              </div>
+              <hr>
+
+              <p class="my-3"> العنوان الوطني </p>
+              <div class="d-flex bg-graylight rounded p-2">
+                <input type="file" id="fileInput7" style="display: none;" onchange="updateFileName(this, 'fileInfo7')">
+                <label for="fileInput7" class="btn btn-outline-secondary btn-sm rounded py-0 px-3 m-0">
+                  <p class="m-0 btn-up">رفع
+                    <i class="bi bi-upload" style="font-size: 18px;"></i>
+                  </p>
+                </label>
+                <div class="file-info mx-3 my-0" id="fileInfo7" style="display: none;">
+                  <p class="m-0" id="fileName7">اسم الملف</p>
+                  <span class="remove-file" onclick="removeFile('fileInput7', 'fileInfo7')">✖</span>
+                </div>
+              </div>
+              <hr>
+
+              <p class="my-3"> اخرى </p>
+              <div class="d-flex bg-graylight rounded p-2">
+                <input type="file" id="fileInput8" style="display: none;" onchange="updateFileName(this, 'fileInfo8')">
+                <label for="fileInput8" class="btn btn-outline-secondary btn-sm rounded py-0 px-3 m-0">
+                  <p class="m-0 btn-up">رفع
+                    <i class="bi bi-upload" style="font-size: 18px;"></i>
+                  </p>
+                </label>
+                <div class="file-info mx-3 my-0" id="fileInfo8" style="display: none;">
+                  <p class="m-0" id="fileName8">اسم الملف</p>
+                  <span class="remove-file" onclick="removeFile('fileInput8', 'fileInfo8')">✖</span>
+                </div>
+              </div>
+              <hr>
+
+            </div>
+          </div>
+
+          <div class="ds-pagination">
+            <div class="pagination-bar">
+              <div class="d-flex justify-content-between mb-3 px-md-4" style="margin-bottom: 12px;">
+                <div class="previous">
+                  <button
+                    class="btn btn-secondary btn-icon btn-icon-left d-flex justify-content-between align-items-center"
+                    onclick="prevStep()" tabindex="0" role="button" aria-disabled="false" aria-label="Previous page"
+                    rel="prev">
+                    <i class="ds-chevron-left"></i>
+                    <span>السابق</span>
+                  </button>
+                </div>
+
+                <div class="next d-md-block">
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-right d-flex justify-content-between align-items-center"
+                    onclick="nextStep(2)" tabindex="0" role="button" aria-disabled="false" aria-label="Next page"
+                    rel="next">
+                    <span>التالي</span>
+                    <i class="ds-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="step3" class="step-content col-lg-9 p-md-5 pb-5">
+          <!-- Success message container -->
+          <div class="question-container align-content-center text-center active">
+            <!-- Success icon -->
+            <i class="ds-check-circle h1" style="font-size: 90px; color: #2a8a59;"></i>
+            <!-- Success message heading -->
+            <h3 class="pt-4 text-green mb-3">تم رفع الطلب بنجاح</h3>
+            <!-- Display order number -->
+            <p>رقم الطلب #43421</p>
+          </div>
+
+          <!-- Navigation for next steps -->
+          <div class="d-flex justify-content-end mb-3 px-md-4" style="margin-bottom: 12px;">
+            <div class="next d-md-block">
+              <!-- Button to confirm and proceed -->
+              <a href="detail.html" class="btn btn-primary">موافق</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End  main content -->
+
+  <!-- start footer  -->
+  <footer class="ds-footer mt-5 mobile-hide">
+    <div class="ds-footer-container ">
+      <div class="ds-footer-policy p-2 container">
+        <div class="p-2 bd-highlight m-0">
+          <!-- logo   -->
+          <img src="../assets/img/white logo.svg" style="width: 130px" alt="" />
+
+          <img src="../assets/img/Saudi_Vision_2030_logo.svg.png" style="width: 60px !important ;"
+            class="logo-white px-2" alt="" />
+        </div>
+
+        <div class="p-2 bd-highlight my-0">
+          <a href="">شروط الإستخدام</a>
+        </div>
+        <div class="p-2 bd-highlight">
+          <span> تطوير و تشغيل - الوكالة المساعدة للتحول الرقمي </span>
+        </div>
+        <!-- copyright -->
+        <div class="p-2 bd-highlight">
+          <span> امانة العاصمة المقدسة © 2024 </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer  -->
+
+  <script>
+    let currentStep = 1;
+
+    function nextStep(step) {
+      // Hide the current step
+      document.getElementById(`step${currentStep}`).classList.remove('active');
+      document.getElementById(`stepp${currentStep}`).classList.remove('active');
+
+
+      // Update the current step
+      currentStep++;
+
+      // Show the next step
+      document.getElementById(`step${currentStep}`).classList.add('active');
+
+
+      document.getElementById(`stepp${currentStep}`).classList.add('active');
+
+      // Update progress bar
+      updateProgressBar();
+    }
+
+
+
+    function prevStep() {
+      // Hide the current step
+      document.getElementById(`step${currentStep}`).classList.remove('active');
+
+      // Update the current step
+      currentStep--;
+
+      // Show the previous step
+      document.getElementById(`step${currentStep}`).classList.add('active');
+
+      // Update progress bar
+      updateProgressBar();
+    }
+
+    function updateProgressBar() {
+      const progressBar = document.getElementById('progress-bar');
+      const progressPercentage = (currentStep / 3) * 100;
+      progressBar.style.width = `${progressPercentage}%`;
+      progressBar.setAttribute('aria-valuenow', progressPercentage);
+      progressBar.innerText = `${currentStep}/3`;
+    }
+
+  </script>
+  <script>
+    function updateFileName(input) {
+      const fileInfo = document.getElementById('fileInfo');
+      const fileName = document.getElementById('fileName');
+
+      if (input.files.length > 0) {
+        fileName.textContent = input.files[0].name; // Update file name
+        fileInfo.style.display = 'flex'; // Show file info
+      } else {
+        fileInfo.style.display = 'none'; // Hide file info if no file is selected
+      }
+    }
+
+    function removeFile() {
+      const input = document.getElementById('fileInput');
+      input.value = ''; // Clear file input
+      document.getElementById('fileInfo').style.display = 'none'; // Hide file info
+    }
+  </script>
+
+  <!-- AOS (Animate on Scroll) library for scroll animations -->
+  <script src="../assets/js/aos.js"></script>
+
+  <!-- Bootstrap JavaScript bundle with Popper for responsive components -->
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript for DS components -->
+  <script src="../assets/js/nds-ds.js"></script>
+
+  <!-- Highlight.js for syntax highlighting (if used) -->
+  <script src="../assets/js/highlight.min.js"></script>
+
+  <!-- Main custom JavaScript file -->
+  <script src="../assets/js/main-js"></script>
+
+</body>
+
+</html>

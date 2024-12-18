@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+  <title>طباعة الشهادات </title>
+
+  <!-- basic css -->
+  <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+  <link href="../assets/css/e-participation.css" rel="stylesheet">
+  <link href="../assets/css/table2.css" rel="stylesheet" />
+
+
+  <!-- Link to animation CSS -->
+  <link href="../assets/css/animate.min.css" rel="stylesheet" />
+
+  <!-- Link to Bootstrap Icons -->
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+
+  <!-- Link to AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="../assets/css/aos.css" />
+
+  <style>
+    .pro {
+      max-height: 27px;
+      border-radius: 5px;
+      font-size: 14px !important;
+
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+
+
+  <!-- Start  navigation bar -->
+  <nav class="navbar navbar-expand-lg ds-header sticky bg-white">
+    <div class="container">
+      <div class="d-flex">
+        <!-- Button for toggling the navigation menu -->
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+          data-target="#navb">
+          <i class="ds-menu"></i>
+          <!-- Menu icon -->
+          <div class="md-hide text-primary">
+            <i class="ds-x-circle"></i> اغلاق
+            <!-- Close icon for small screens -->
+          </div>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/white logo.svg" alt="logo" class="green-nav-logo">
+          <!-- Green logo -->
+          <img src="../assets/img/logo.svg" width="120" class="light-nav-logo" alt="logo">
+          <!-- Light logo -->
+        </a>
+      </div>
+
+      <div class="d-flex flex-row order-3" id="right-nav">
+        <ul class="navbar-nav flex-row">
+          <!-- List language for navigation -->
+          <li class="nav-item mobile-hide">
+            <a class="font-weight-bold nav-link" href="javascript:void(0)"> </a>
+          </li>
+
+          <!-- user botton-->
+          <li class="nav-item nav-item-login">
+            <a class="nav-link with-icon main-nav text-nav with-icon">
+              <!-- User icon (green) -->
+              <i class="bi bi-person-fill text-green"></i>
+              <!-- User icon (white) -->
+              <p class="mobile-hide text-primary">   مكتب عبد الخالق </p>
+            </a>
+            <!-- user menu-->
+            <div id="login-dropdown-menu" class="dropdown-menu dropdown-menu-login p-3" style="display: none;">
+              <ul class="list-group list-group-flush">
+
+                <a href="password.html" class="main-nav list-group-item list-group-item-action logout">
+                  <i class="bi bi-key"></i>
+                   كلمة المرور 
+                </a>
+
+                <a href="../login_type.html" class="main-nav list-group-item list-group-item-action logout">
+                  <i class="bi bi-box-arrow-left"></i>
+                  تسجيل الخروج
+                </a>
+                
+              </ul>
+            </div>
+            <!--End user menu-->
+          </li>
+          <!--End user botton-->
+
+          <!-- notification botton-->
+          <li class="nav-item nav-item-notifi">
+            <a class="nav-link with-icon">
+              <i class="bi bi-bell-fill text-green"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">
+                9+ </span>
+
+              <p class="mobile-hide">الإشعارات</p>
+            </a>
+            <!-- notification menu-->
+            <div id="notifi-dropdown-menu" class="dropdown-menu dropdown-menu-notifi p-3" style="display: none;">
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex flex-row">
+                    <img class="p-2" src="../assets/img/proggres.svg" alt="">
+                    <div class="p-2" style="text-align: right;">
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">
+                          <b>تم اضافة طلب جديد برقم تسلسلي</b>
+                          <span class="text-primary"> #2254352</span>
+                        </p>
+                      </div>
+                      <small class="font-body-5"> منذ ساعه </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End notification menu-->
+          </li>
+          <!-- End notification botton-->
+        </ul>
+      </div>
+
+      <!--  navigation menu-->
+
+      <div class="collapse navbar-collapse order-2" id="navb">
+        
+        <ul class="navbar-nav mr-auto">
+
+          
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle active" href="home.html" id="navbarDropdown4">
+              الرئيسية
+            </a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              الطـــلبـــات
+
+            </a>
+            <ul class="dropdown-menu p-0">
+ 
+              <li><a class="nav-link dropdown-toggle " href="#">الطلبات المعدلة</a></li>
+
+              <li><a class="nav-link dropdown-toggle " href="new_order.html"> طلب تصريح جديد  </a></li>
+
+
+
+              </ul>
+          </li>
+
+
+           
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle " href="view44.html" id="navbarDropdown4">
+              طباعة الشهادات
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle " href="Get_wasel_XY_Error_Req.html" id="navbarDropdown4">
+              تعديل واصل والاحداثيات
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              الإستعلامات
+
+
+            </a>
+            <ul class="dropdown-menu p-0">
+ 
+              <li><a class="nav-link dropdown-toggle " href="view4.html">  استعلام الطلبات </a></li>
+              <li><a class="nav-link dropdown-toggle " href="#">  استعلام الأعوام الماضية </a></li>
+
+              </ul>
+          </li>
+
+         
+
+
+        </ul>
+      </div>
+
+      <!--  End navigation menu-->
+    </div>
+  </nav>
+  <!-- End navigation bar -->
+
+
+
+
+
+  <!--  breadcrumb  -->
+  <nav class="ds-nav" style="margin-top: 80px">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/">الصفحة الرئيسية</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="/"> طباعة الشهادة</a>
+        </li>
+      </ol>
+    </div>
+  </nav>
+  <!--End  breadcrumb  -->
+
+  <!-- Start  main content -->
+
+  <main class="container-fluid  p-0">
+
+    <div class="container px-4 main-content my-5">
+      <!--title   -->
+
+
+
+
+      <div class="row my-4 px-3 agency-header">
+        <div class="col-3 px-0 ">
+          <h3 class="agency-header-filter"> قائمة طلبات التصاريح</h3>
+        </div>
+
+
+        <!--filter mobile   -->
+        <div class="col-12 px-0 d-block d-md-none">
+          <div class="d-flex col-12 agency-search-filter">
+            <label for="input2"></label>
+
+            <fieldset class="d-block agency-search-input w-auto">
+              <i class="ds-search"></i>
+              <input id="input2" placeholder="رقم الطلب..." type="text" class="ds-text-input w-auto" value="">
+
+            </fieldset>
+          </div>
+
+          <!--filter-->
+
+        </div>
+
+        <div class="col-12 col-lg-9 d-none d-md-block p-0" style="font-size: 14px;">
+          <!-- Container for the search and filter controls -->
+          <div class="d-flex float-right agency-search-filter">
+            <p class="d-none d-lg-block agency-header-results">
+              عرض 1-6 من أصل 6 نتيجة
+            </p>
+            <!-- Search Input Field -->
+            <fieldset class="d-block agency-search-input mx-2">
+              <i class="ds-search"></i>
+              <input id="input1" placeholder="رقم الطلب..." type="text" class="ds-text-input" value="">
+            </fieldset>
+
+            <!-- Sort Options -->
+            <div class="ds-sort d-none d-lg-block">
+              <div class="ds-filters">
+                <button type="button" class="btn ds-filters-header">
+                  <i class="ds-sort-1"></i>
+                  <!-- Current sort option label -->
+                  <span style="font-weight: normal; font-size: 14;">
+                    الترتيب بحسب : &nbsp;
+                    <b id="text-search-sort">
+                      الأحدث
+                    </b>
+                  </span>
+                </button>
+
+                <!-- Filter content -->
+                <div class="ds-filters-body d-none">
+                  <div class="p-3 ds-filters-card">
+                    <p class="font-weight-bold my-2 px-2">الترتيب بحسب :</p>
+                    <div class="ds-sort-mobile"></div>
+                    <div class="ds-sort-card bg-secondary">
+                      <button type="button" class="ds-sort-card-header text-green font-weight-bold">الأحدث <i
+                          class="ds-check"></i></button>
+                    </div>
+
+                    <div class="ds-sort-card">
+                      <button type="button" class="ds-sort-card-header border-0">
+                        الأهمية
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End filter content -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Display results count -->
+
+        </div>
+
+      </div>
+
+
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">رقم الطلب</th>
+            <th scope="col">رقم التصريح</th>
+            <th scope="col">المستفيد من التصريح</th>
+            <th scope="col" class="d-flex justify-content-center align-items-center">الإجراء </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">5366378</th>
+            <td>637284</td>
+            <td>خالد علي القحطاني</td>
+            <td class="d-flex justify-content-center align-items-center">
+              <button type="button" class="btn btn-primary d-flex align-items-center p-3 pro ">طباعة &nbsp;<i
+                  class="bi bi-printer"></i></button>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">5366378</th>
+            <td>739483</td>
+            <td>خالد علي القحطاني</td>
+            <td class="d-flex justify-content-center align-items-center">
+              <button type="button" class="btn btn-primary d-flex align-items-center p-3 pro ">طباعة &nbsp;<i
+                  class="bi bi-printer"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <div class="ds-pagination">
+        <div class="pagination-bar">
+          <ul>
+            <!-- Previous page button -->
+            <li class="previous">
+              <a href="#"
+                class="btn btn-secondary btn-icon btn-icon-left d-flex justify-content-between align-items-center"
+                role="button" aria-disabled="false" aria-label="Previous page" rel="prev">
+                <i class="ds-chevron-left"></i>
+                <span>السابق</span> <!-- Previous -->
+              </a>
+            </li>
+            <!-- Page 1 button -->
+            <li>
+              <a href="#" rel="prev" role="button" class="acti btn btn-secondary btn-text" tabindex="0"
+                aria-label="Page 1">١</a>
+            </li>
+            <!-- Page 2 button (current page) -->
+            <li class="selected">
+              <a href="#" rel="canonical" role="button" class="btn btn-secondary btn-text selected" tabindex="-1"
+                aria-label="Page 2 is your current page" aria-current="page">٢</a>
+            </li>
+            <!-- Page 3 button -->
+            <li>
+              <a href="#" rel="next" role="button" class="btn btn-secondary btn-text" tabindex="0"
+                aria-label="Page 3">٣</a>
+            </li>
+            <!-- Page 4 button (hidden on small screens) -->
+            <li class="d-none d-md-block">
+              <a href="#" rel="next" role="button" class="btn btn-secondary btn-text forth-page" tabindex="0"
+                aria-label="Page 4">٤</a>
+            </li>
+            <!-- Pagination break (hidden on small screens) -->
+            <li class="break d-none d-md-block">
+              <a class="btn btn-secondary btn-text btn-break" role="button" tabindex="0">...</a>
+            </li>
+            <!-- Page 10 button (hidden on small screens) -->
+            <li class="d-none d-md-block">
+              <a href="#" role="button" class="btn btn-secondary btn-text sixith-page" tabindex="0"
+                aria-label="Page 6">١۰</a>
+            </li>
+            <!-- Next page button -->
+            <li class="next">
+              <a href="#"
+                class="btn btn-secondary btn-icon btn-icon-right d-flex justify-content-between align-items-center"
+                tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">
+                <span>التالي</span> <!-- Next -->
+                <i class="ds-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- Total pages count -->
+          <ul class="total-pages-ul">
+            <li>
+              <p class="total-pages" style="margin-top: 10px; color: #757575;">
+                مجموع الصفحات 3 <!-- Total pages 3 -->
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </main>
+
+
+  <!-- start footer  -->
+  <footer class="ds-footer fixed-footer ">
+
+    <div class="ds-footer-container  ">
+
+      <div class="ds-footer-policy p-2 container">
+        <div class="p-2 bd-highlight m-0">
+          <!-- logo   -->
+          <img src="../assets/img/ds-white-logo.svg" style="width: 130px;" alt="">
+
+          <img src="../assets/img/Saudi_Vision_2030_logo.svg.png" class="logo-white px-2" alt="">
+        </div>
+
+        <div class="p-2 bd-highlight my-0">
+          <a href="">شروط الإستخدام</a>
+        </div>
+        <div class="p-2 bd-highlight">
+          <span>تطوير و تشغيل - الوكالة المساعدة للتحول الرقمي</span>
+        </div>
+        <!-- copyright -->
+        <div class="p-2 bd-highlight">
+          <span> امانة العاصمة المقدسة © 2024 </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End footer  -->
+
+  <!-- AOS (Animate on Scroll) library for scroll animations -->
+  <script src="../assets/js/aos.js"></script>
+
+  <!-- Bootstrap JavaScript bundle with Popper for responsive components -->
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript for DS components -->
+  <script src="../assets/js/nds-ds.js"></script>
+
+  <!-- Highlight.js for syntax highlighting (if used) -->
+  <script src="../assets/js/highlight.min.js"></script>
+
+  <!-- Main custom JavaScript file -->
+  <script src="../assets/js/main-js"></script>
+
+  <!-- Animation  script -->
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

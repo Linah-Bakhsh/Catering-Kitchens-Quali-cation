@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+  <title> المستخدمين </title>
+
+  <!-- basic css -->
+  <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/e-participation.css" rel="stylesheet">
+  <link href="../assets/css/table.css" rel="stylesheet">
+
+
+  <!-- animation -->
+  <link href="../assets/css/animate.min.css" rel="stylesheet" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+
+  <!-- animation by scrolling -->
+  <link rel="stylesheet" href="../assets/css/aos.css" />
+
+</head>
+
+
+<body>
+
+
+
+
+  <!-- Start  navigation bar -->
+  <nav class="navbar navbar-expand-lg ds-header sticky bg-white">
+    <div class="container">
+      <div class="d-flex">
+        <!-- Button for toggling the navigation menu -->
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+          data-target="#navb">
+          <i class="ds-menu"></i>
+          <!-- Menu icon -->
+          <div class="md-hide text-primary">
+            <i class="ds-x-circle"></i> اغلاق
+            <!-- Close icon for small screens -->
+          </div>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/white logo.svg" alt="logo" class="green-nav-logo">
+          <!-- Green logo -->
+          <img src="../assets/img/logo.svg" width="120" class="light-nav-logo" alt="logo">
+          <!-- Light logo -->
+        </a>
+      </div>
+
+      <div class="d-flex flex-row order-3" id="right-nav">
+        <ul class="navbar-nav flex-row">
+          <!-- List language for navigation -->
+          <li class="nav-item mobile-hide">
+            <a class="font-weight-bold nav-link" href="javascript:void(0)"> </a>
+          </li>
+
+          <!-- user botton-->
+          <li class="nav-item nav-item-login">
+            <a class="nav-link with-icon main-nav text-nav with-icon">
+              <!-- User icon (green) -->
+              <i class="bi bi-person-fill text-green"></i>
+              <!-- User icon (white) -->
+              <p class="mobile-hide text-primary"> مدير النظام </p>
+            </a>
+            <!-- user menu-->
+            <div id="login-dropdown-menu" class="dropdown-menu dropdown-menu-login p-3" style="display: none;">
+              <ul class="list-group list-group-flush">
+
+                <a href="../login_type.html" class="main-nav list-group-item list-group-item-action logout">
+                  <i class="bi bi-box-arrow-left"></i>
+                  تسجيل الخروج
+                </a>
+              </ul>
+            </div>
+            <!--End user menu-->
+          </li>
+          <!--End user botton-->
+
+          <!-- notification botton-->
+          <li class="nav-item nav-item-notifi">
+            <a class="nav-link with-icon">
+              <i class="bi bi-bell-fill text-green"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">
+                9+ </span>
+
+              <p class="mobile-hide">الإشعارات</p>
+            </a>
+            <!-- notification menu-->
+            <div id="notifi-dropdown-menu" class="dropdown-menu dropdown-menu-notifi p-3" style="display: none;">
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex flex-row">
+                    <img class="p-2" src="../assets/img/proggres.svg" alt="">
+                    <div class="p-2" style="text-align: right;">
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">
+                          <b>تم اضافة مستخدم جديد برقم تسلسلي</b>
+                          <span class="text-primary"> #2254352</span>
+                        </p>
+                      </div>
+                      <small class="font-body-5"> منذ ساعه </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End notification menu-->
+          </li>
+          <!-- End notification botton-->
+        </ul>
+      </div>
+
+      <!--  navigation menu-->
+
+      <div class="collapse navbar-collapse order-2" id="navb">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle " href="home.html" id="navbarDropdown4">
+              الرئيسية
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle " href="evaluation.html" id="navbarDropdown4">
+              معايير التقييم
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle active" href="users.html" id="navbarDropdown4">
+              المستخدمين
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--  End navigation menu-->
+    </div>
+  </nav>
+  <!-- End navigation bar -->
+
+  <!--  breadcrumb  -->
+  <nav class="ds-nav" style="margin-top: 80px;">
+    <div class="container">
+      <ol class="breadcrumb">
+
+        <li class="breadcrumb-item">
+          <a href="home.html"> الرئيسية </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="detail.html"> تفاصيل العقد </a>
+        </li>
+
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Start  main content -->
+
+  <main class="container-fluid mb-5 p-0">
+
+    <div class="container px-3 px-md-0 pt-5">
+
+      <div class="row my-4 mx-0 px-3 agency-header">
+        <div class="col-3 px-0 d-none d-lg-block">
+          <h2 class="agency-header-filter"> جميع المستخدمين </h2>
+        </div>
+
+
+        <!--filter mobile   -->
+        <div class="col-12 px-0 d-block d-md-none">
+          <div class="d-flex col-12 agency-search-filter">
+            <label for="input2"></label>
+
+            <fieldset class="d-block agency-search-input w-auto">
+              <i class="ds-search"></i>
+              <input id="input2" placeholder="رقم التسلسلي.." type="text" class="ds-text-input w-auto" value="">
+
+              <button type="button" data-bs-toggle="modal" data-bs-target="#add"
+                class="  btn btn-primary btn-report rounded-0 my-4 w-auto">
+                مستخدم جديد
+                <i class="bi bi-plus-square btn-report pl-1"></i>
+              </button>
+            </fieldset>
+          </div>
+
+          <!--filter-->
+
+        </div>
+
+        <div class="col-12 col-lg-9 d-none d-md-block p-0">
+          <div class="d-flex float-right agency-search-filter">
+
+
+
+            <button type="button" data-bs-toggle="modal" data-bs-target="#add"
+              class=" mx-2 btn btn-primary btn-report rounded-0 ">
+              مستخدم جديد
+              <i class="bi bi-plus-square btn-report pl-1"></i>
+            </button>
+
+
+
+            <fieldset class="d-block agency-search-input mx-2">
+              <i class="ds-search"></i>
+              <input id="input1" placeholder="رقم التسلسلي.." type="text" class="ds-text-input" value="">
+            </fieldset>
+
+
+            <div class="ds-sort d-none d-lg-block ">
+              <div class="ds-filters">
+                <button type="button" class="btn ds-filters-header">
+                  <i class="ds-sort-1"></i>
+                  <!--filter-->
+                  <span style="font-weight: normal;">
+                    الترتيب بحسب : &nbsp;
+                    <b id="text-search-sort">
+                      الأحدث
+                    </b>
+                  </span>
+                </button>
+
+                <!--filter content-->
+                <div class="ds-filters-body d-none">
+                  <div class="p-3 ds-filters-card">
+                    <p class="font-weight-bold my-2 px-2">الترتيب بحسب :</p>
+                    <div class="ds-sort-mobile"></div>
+                    <div class="ds-sort-card bg-secondary">
+                      <button type="button" class="ds-sort-card-header text-green font-weight-bold">الأحدث <i
+                          class="ds-check"></i></button>
+                    </div>
+
+                    <div class="ds-sort-card">
+                      <button type="button" class="ds-sort-card-header border-0">
+                        الأهمية
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--End content-->
+              </div>
+            </div>
+          </div>
+
+
+
+          <p class="d-none d-lg-block agency-header-results" style="padding-left: 100px;">
+            عرض 1-6 من أصل 6 نتيجة
+          </p>
+        </div>
+      </div>
+
+
+
+      <table>
+        <!-- Table Header -->
+        <thead>
+
+
+          <tr>
+            <th class="text-center  px-4" style="width: 11%;">رقم تسلسلي</th>
+
+            <th class="text-center" style="width: 19%;"> اسم المستخدم </th>
+            <th class="mobile-hide text-center" style="width: 12%;"> الصلاحيات </th>
+            <th class="mobile-hide text-center" style="width: 15%;"> الادارة</th>
+
+            <th class="mobile-hide text-center" style="width: 10%;"> رقم الجوال </th>
+            <th class="mobile-hide text-center" style="width: 15%;"> البريد الالكتروني</th>
+
+
+            <th class="text-center"> الإجراء </th>
+
+          </tr>
+
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+
+
+
+          <tr data-aos="zoom-in-up" data-aos-delay="0">
+            <td class="b-none text-center ">127658</td>
+
+            <td class="text-center   text-truncate" style="max-width:  120px;"> احمد صالح ابراهيم العنزي </td>
+            <td class="mobile-hide text-truncate" style="max-width:  120px;"> الأسئلة-تعديل </td>
+            <td class="mobile-hide  text-center   text-truncate" style="max-width:  120px;"> إدارة المطابخ والاعاشة
+            </td>
+            <td class="mobile-hide text-center"> 0595019474 </td>
+
+            <td class="text-center mobile-hide">
+              lbakhsh@sp.hmm.gov.sa
+            </td>
+
+            <td class="text-center text-nowrap" style="vertical-align: -webkit-baseline-middle !important;">
+
+
+
+              <!-- btn Edit -->
+
+              <a type="button" class=" btn-edit b-edit mr-2" data-bs-toggle="modal" data-bs-target="#edit">
+
+              </a>
+
+            </td>
+
+          </tr>
+
+
+          <tr data-aos="zoom-in-up" data-aos-delay="100">
+            <td class="b-none text-center ">127658</td>
+
+            <td class="text-center   text-truncate" style="max-width:  120px;"> احمد صالح ابراهيم العنزي </td>
+            <td class="mobile-hide text-truncate" style="max-width:  120px;"> الأسئلة-تعديل </td>
+            <td class="mobile-hide  text-center   text-truncate" style="max-width:  120px;"> إدارة المطابخ والاعاشة
+            </td>
+            <td class="mobile-hide text-center"> 0595019474 </td>
+
+            <td class="text-center mobile-hide">
+              lbakhsh@sp.hmm.gov.sa
+            </td>
+
+            <td class="text-center text-nowrap" style="vertical-align: -webkit-baseline-middle !important;">
+
+
+
+              <!-- btn Edit -->
+
+              <a type="button" class=" btn-edit b-edit mr-2" data-bs-toggle="modal" data-bs-target="#edit">
+
+              </a>
+
+            </td>
+
+          </tr>
+
+
+          <tr data-aos="zoom-in-up" data-aos-delay="200">
+            <td class="b-none text-center ">127658</td>
+
+            <td class="text-center   text-truncate" style="max-width:  120px;"> احمد صالح ابراهيم العنزي </td>
+            <td class="mobile-hide text-truncate" style="max-width:  120px;"> الأسئلة-تعديل </td>
+            <td class="mobile-hide  text-center   text-truncate" style="max-width:  120px;"> إدارة المطابخ والاعاشة
+            </td>
+            <td class="mobile-hide text-center"> 0595019474 </td>
+
+            <td class="text-center mobile-hide">
+              lbakhsh@sp.hmm.gov.sa
+            </td>
+
+            <td class="text-center text-nowrap" style="vertical-align: -webkit-baseline-middle !important;">
+
+
+
+              <!-- btn Edit -->
+
+              <a type="button" class=" btn-edit b-edit mr-2" data-bs-toggle="modal" data-bs-target="#edit">
+
+              </a>
+
+            </td>
+
+          </tr>
+
+
+          <!-- Additional table rows as needed -->
+        </tbody>
+      </table>
+      <div class="ds-pagination">
+        <div class="pagination-bar">
+          <ul>
+            <li class="previous">
+              <a href="#"
+                class="btn btn-secondary btn-icon btn-icon-left d-flex justify-content-between align-items-center"
+                role="button" aria-disabled="false" aria-label="Previous page" rel="prev">
+                <i class="ds-chevron-left"></i>
+                <span>السابق</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="prev" role="button" class="btn btn-secondary btn-text" tabindex="0" aria-label="Page 1">١
+              </a>
+            </li>
+            <li class="selected">
+              <a href="#" rel="canonical" role="button" class="btn btn-secondary btn-text selected" tabindex="-1"
+                aria-label="Page 2 is your current page" aria-current="page">٢ </a>
+            </li>
+            <li>
+              <a href="#" rel="next" role="button" class="btn btn-secondary btn-text" tabindex="0" aria-label="Page 3">٣
+              </a>
+            </li>
+            <li class="d-none d-md-block">
+              <a href="#" rel="next" role="button" class="btn btn-secondary btn-text forth-page" tabindex="0"
+                aria-label="Page 4">٤ </a>
+            </li>
+            <li class="break d-none d-md-block">
+              <a class="btn btn-secondary btn-text btn-break" role="button" tabindex="0">... </a>
+            </li>
+            <li class="d-none d-md-block">
+              <a href="#" role="button" class="btn btn-secondary btn-text sixith-page" tabindex="0"
+                aria-label="Page 6">١۰ </a>
+            </li>
+            <li class="next">
+              <a href="#"
+                class="btn btn-secondary btn-icon btn-icon-right d-flex justify-content-between align-items-center"
+                tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">
+                <span>التالي</span>
+                <i class="ds-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="total-pages-ul">
+            <li>
+              <p class="total-pages" style="margin-top: 10px; color: #757575;">
+                مجموع الصفحات 3
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </main>
+
+
+
+  <footer class="ds-footer">
+    <div class="ds-footer-container">
+      <div class="ds-footer-policy p-2 container">
+        <div class="p-2 bd-highlight m-0">
+          <!-- logo   -->
+          <img src="../assets/img/ds-white-logo.svg" style="width: 130px;" alt="" />
+
+          <img src="../assets/img/Saudi_Vision_2030_logo.svg.png" style="width: 60px;" class="logo-white px-2" alt="" />
+        </div>
+
+        <div class="p-2 bd-highlight my-0">
+          <a href="">شروط الإستخدام</a>
+        </div>
+        <div class="p-2 bd-highlight">
+          <span>تطوير و تشغيل - الوكالة المساعدة للتحول الرقمي</span>
+        </div>
+        <!-- copyright -->
+        <div class="p-2 bd-highlight">
+          <span> امانة العاصمة المقدسة © 2024 </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- modal edit -->
+
+  <!-- Edit User Modal -->
+  <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header text-center sticky-top" data-bs-theme="dark">
+          <h3 class="modal-title fs-5 text-white" id="exampleModalLabel">تعديل المستخدم</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body container px-2 px-md-5 pb-5">
+          <div class="mb-3 m-4">
+
+            <!-- Row for user data -->
+            <div class="row px-md-4 dnone">
+              <!-- Username input -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">اسم المستخدم</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" placeholder="احمد صالح ابراهيم العنزي">
+              </div>
+              <!-- Password input -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">كلمة السر</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" type="password" placeholder="********">
+              </div>
+            </div>
+
+            <div class="row my-3 px-md-4 dnone">
+
+
+
+              <!-- Role details -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">تفاصيل الصلاحية</p>
+                <div class="ds-select w-auto form-select p-3 rounded-field">
+                  <select>
+                    <option value="0">الأسئلة - تعديل</option>
+                    <option class="text-primary" value="2">المستخدمون - تفاصيل</option>
+                    <option class="text-danger" value="1">المستخدمون - إضافة</option>
+                    <option class="text-danger" value="1">المستخدمون - تعديل</option>
+                    <option class="text-danger" value="1">المستخدمون - حذف</option>
+                    <option class="text-danger" value="1">المستخدمون - تقارير</option>
+                    <option class="text-danger" value="1">الأسئلة - تفاصيل</option>
+                    <option class="text-danger" value="1">الأسئلة - إضافة</option>
+                    <option class="text-danger" value="1">الأسئلة - تعديل</option>
+                    <option class="text-danger" value="1">الأسئلة - حذف</option>
+                    <option class="text-danger" value="1">الأسئلة - تقارير</option>
+                    <option class="text-danger" value="1">الزيارات - إضافة</option>
+                    <option class="text-danger" value="1">الزيارات - تعديل</option>
+                    <option class="text-danger" value="1">الزيارات - حذف</option>
+                    <option class="text-danger" value="1">الزيارات - تقارير</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Phone number -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">رقم الجوال</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" type="phone" placeholder="0595019474">
+              </div>
+
+              <!-- Email -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">البريد الالكتروني</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" type="email"
+                  placeholder="lbakhsh@sp.hmm.gov.sa">
+              </div>
+
+              <!-- Department -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">الإدارة \ القسم</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" type="text"
+                  placeholder="إدارة المطابخ والاعاشة">
+              </div>
+
+            </div>
+
+            <!-- Action buttons -->
+            <div class="mb-3 m-md-4 m-0 pt-5 text-center d-flex flex-column flex-md-row justify-content-between">
+              <div class="d-flex flex-column flex-md-row justify-content-between">
+                <button type="button" class="btn btn-primary mb-2 mb-md-0">
+                  تعديل <i class="bi bi-pencil-fill"></i>
+                </button>
+                <button type="button" class="btn btn-outline-secondary mx-md-4 mb-2 mb-md-0">الغاء</button>
+              </div>
+              <button type="button" class="btn btn-outline-danger mb-2 mb-md-0">
+                حذف المستخدم <i class="bi bi-trash3"></i>
+              </button>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  END modal -->
+
+
+  <!-- Modal for adding a new user -->
+  <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center sticky-top" data-bs-theme="dark">
+          <h3 class="modal-title fs-5 text-white" id="exampleModalLabel">إضافة مستخدم جديد</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body container px-2 px-md-5 pb-5">
+          <div class="mb-3 m-4">
+            <div class="row px-md-4 dnone">
+              <!-- Username -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">اسم المستخدم</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" style="height: auto;" id="label9"
+                  placeholder="">
+              </div>
+              <!-- Password -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">كلمة السر</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" type="password" style="height: auto;"
+                  id="label9" placeholder="">
+              </div>
+            </div>
+            <div class="row my-3 px-md-4 dnone">
+              <!-- Role selection -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">تفاصيل الصلاحية</p>
+                <div class="ds-select w-auto form-select p-3 rounded-field">
+                  <select>
+                    <option value="0">اختر من القائمة</option>
+                    <option class="text-primary" value="2">المستخدمون - تفاصيل</option>
+                    <option class="text-danger" value="1">المستخدمون - إضافة</option>
+                    <option class="text-danger" value="1">المستخدمون - تعديل</option>
+                    <option class="text-danger" value="1">المستخدمون - حذف</option>
+                    <option class="text-danger" value="1">المستخدمون - تقارير</option>
+                    <option class="text-danger" value="1">الأسئلة - تفاصيل</option>
+                    <option class="text-danger" value="1">الأسئلة - إضافة</option>
+                    <option class="text-danger" value="1">الأسئلة - تعديل</option>
+                    <option class="text-danger" value="1">الأسئلة - حذف</option>
+                    <option class="text-danger" value="1">الأسئلة - تقارير</option>
+                    <option class="text-danger" value="1">الزيارات - إضافة</option>
+                    <option class="text-danger" value="1">الزيارات - تعديل</option>
+                    <option class="text-danger" value="1">الزيارات - حذف</option>
+                    <option class="text-danger" value="1">الزيارات - تقارير</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Phone number -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">رقم الجوال</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" type="phone" style="height: auto;"
+                  id="label9" placeholder="">
+              </div>
+              <!-- Email -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">البريد الإلكتروني</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" type="email" style="height: auto;"
+                  id="label9" placeholder="">
+              </div>
+              <!-- Department -->
+              <div class="col-lg-6 my-3 data-item">
+                <p class="data-label">الإدارة \ القسم</p>
+                <input class="ds-text-input text-gray-bus p-3 rounded-field" type="text" style="height: auto;"
+                  id="label9" placeholder="">
+              </div>
+            </div>
+            <!-- Action buttons -->
+            <div class="mb-3 m-md-4 m-0 pt-5 text-center d-flex flex-column flex-md-row justify-content-between">
+              <div class="d-flex flex-column flex-md-row justify-content-between">
+                <button type="button" class="btn btn-primary mb-2 mb-md-0">إضافة <i
+                    class="bi bi-plus-square"></i></button>
+                <button type="button" class="btn btn-outline-secondary mx-md-4 mb-2 mb-md-0">إلغاء</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END modal -->
+
+
+  <!-- Bootstrap core JS-->
+  <script src="../assets/js/aos.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/nds-ds.js"></script>
+  <script src="../assets/js/highlight.min.js"></script>
+  <script src="../assets/js/main-js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/countUp.min.js"></script>
+
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

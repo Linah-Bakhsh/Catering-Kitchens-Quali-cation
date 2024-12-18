@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+  <title>  تسجيل الدخول  </title>
+
+  <!-- basic css -->
+  <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+     <link href="../assets/css/login.css" rel="stylesheet" />
+  
+ 
+  <!-- animation -->
+  <link href="../assets/css/animate.min.css" rel="stylesheet" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+
+  <!-- animation by scrolling -->
+  <link rel="stylesheet" href="../assets/css/aos.css" />
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+</head>
+
+ 
+
+<body>
+ 
+ 
+  <!-- Start  navigation bar -->
+  <nav class="navbar navbar-expand-lg ds-header   bg-graywhite d-lg-none d-sm-block">
+    <div class="container">
+      <div class="d-flex">
+        <a class="align-self-center name-system" href="#">
+          نظام
+          <span class="name-system2"> تأهيل مطابخ الاعاشة </span>
+        </a>
+      </div>
+      <!--login form -->
+
+      <div class="d-flex flex-row order-3" id="right-nav">
+        <ul class="navbar-nav flex-row">
+          <!-- user botton-->
+          <li class="nav-item align-self-center d-none d-lg-block">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/img/logo.svg" class="mobile-logo" alt="logo">
+              <!-- Light logo -->
+            </a>
+          </li>
+          <!--End user botton-->
+
+          <!-- user botton-->
+          <li class="nav-item align-self-center border-0">
+            <a class="px-2" href="#">
+              
+            </a>
+          </li>
+          <!--End user botton-->
+        </ul>
+      </div>
+      <!--  navigation menu-->
+      <!--  End navigation menu-->
+    </div>
+  </nav>
+  <!-- End navigation bar -->
+
+  <!-- container -->
+
+  <div class="row row p-0 m-0"   >
+    <!-- right column -->
+    <div class="col-lg-8 col-md-12 align-self-end" data-aos="fade-up"  data-aos-anchor="#example-anchor"data-aos-offset="500"data-aos-duration="1000" data-aos-delay="800" >
+      <div class="container login-form px-0 p-md-5 " >
+        <div class="d-flex justify-content-between mb-3 align-items-center  " >
+
+          <!-- logo  -->
+
+          <img class="logo-type" src="../assets/img/logo.svg" alt="">
+
+          <h3 class=" m-0 text-primary d-md-block d-none">
+            تسجيل الدخول
+          </h3>
+        
+            <hr class="yellow-border w-25 align-content-center d-md-block d-none">
+
+           
+        </div>
+        <!--login form -->
+
+        <div class="vstack d-grid">
+          <div class="p-2">
+            <!--user ID -->
+
+            <div class="mb-4">
+              <label for="label1" class="ds-input-label">
+                رقم الهوية\ الإقامة
+              </label>
+              <input class="ds-text-input" id="label1" placeholder=" ">
+            </div>
+          </div>
+          <!--passwoard -->
+
+          <div class="p-2">
+            <div class="mb-4">
+              <label for="label2" class="ds-input-label"> كلمة المرور </label>
+              <input type="password" class="ds-text-input" id="label2" placeholder=" ">
+            </div>
+          </div>
+          <div class="p-2 py-3">
+            <!-- Button trigger modal -->
+
+            <!--btn submit  -->
+
+            <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              class="btn btn-primary btn-login">
+              تسجيل الدخول
+            </button>
+          </div>
+
+          <div class="p-2 py-3">
+            <!--btn nafath  -->
+
+            <button type="button" class="btn btn-secondar btn-login">
+              تسجيل الدخول عن طريق النفاذ الوطني
+            </button>
+          </div>
+
+          <!--logo NIC  -->
+
+          <div class="p-2 text-center">
+            <img src="../assets/img/NIC_logo.svg " alt="">
+            <span class="px-2 nic">
+              NIC بالتعاون مع مركز المعلومات الوطني
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END left column -->
+
+
+    <!--start left column -->
+
+    <div class="banner col-lg-4 col-md-12 d-none d-lg-block align-content-center text-center " data-aos="fade-right"  data-aos-anchor="#example-anchor"data-aos-offset="500"data-aos-duration="1100">
+      <div class="container p-5 grid gap-3 "  data-aos="fade-left"data-aos-anchor-placement="center-center" data-aos-delay="300" data-aos-duration="1000">
+        <h1 class="p-2 text-yellow ds-display-font"> نظام تأهيل مطابخ الاعاشة </h1>
+        <p class="p-2 text-white"> إدارة آلية تأهيل مطابخ الإعاشة للحج و العمرة 
+          
+           
+      </div>
+    </div>
+  </div>
+  <!--END left column -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" data-bs-theme="dark">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center container">
+          <img src="../assets/img/icon-authentication.svg" style="width: 171" alt="">
+          <p class="pt-4">قم بإدخال رمز التحقق المرسل على</p>
+          <p class=" ">رقم جوالك 0495019474</p>
+
+          <div class="d-flex justify-content-center p-2">
+            <form name="code" action="*" method="post" autocomplete="on">
+              <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="on">
+              <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="on">
+              <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="on">
+              <input class="input-authenti m-2" type="text" name="code" maxlength="1" autocomplete="on">
+            </form>
+          </div>
+          <p class="p-2">
+            <b>
+              إعادة ارسال الرمز بعد
+              <samp class="text-greenlight"> 1:59</samp>
+            </b>
+          </p>
+
+          <a href="./home.html">
+            <button type="button " data-bs-target="#exampleModal" class="btn btn-primary btn-login mx-5 mb-4">
+              تحقق
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+ $("form").on("input", "input", (e) => {
+  let field = $(e.target);
+  field.val(field.val().replace(/[^0-9]/g, ""));
+  if (field.val().length === 1) {
+    field.nextAll("input").first().focus();
+  }
+});
+  </script>
+
+  <!-- Animation  script -->
+ 
+  <script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/nds-ds.js"></script>
+  <script src="../assets/js/highlight.min.js"></script>
+  <script src="../assets/js/main-js"></script>
+
+
+  
+  <!-- End footer  -->
+  <script src="../assets/js/aos.js"></script>
+
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/nds-ds.js"></script>
+  <script src="../assets/js/highlight.min.js"></script>
+  <script src="../assets/js/main-js"></script>
+
+
+
+
+  <!-- Animation  script -->
+  <script>
+    AOS.init();
+  </script>
+ 
+</body>
+
+</html>

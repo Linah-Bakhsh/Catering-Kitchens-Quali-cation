@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+  <title> الرئيسية </title>
+
+  <!-- basic css -->
+  <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+  <link href="../assets/css/home.css" rel="stylesheet" />
+  <link href="../assets/css/e-participation.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/table.css" rel="stylesheet" />
+  <link href="../assets/css/order.css" rel="stylesheet" />
+
+
+  <!-- Link to animation CSS -->
+  <link href="../assets/css/animate.min.css" rel="stylesheet" />
+
+  <!-- Link to Bootstrap Icons -->
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+
+  <!-- Link to AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="../assets/css/aos.css" />
+
+</head>
+
+<body>
+
+  <!-- Start  navigation bar -->
+  <nav class="navbar navbar-expand-lg ds-header sticky bg-white">
+    <div class="container">
+      <div class="d-flex">
+        <!-- Button for toggling the navigation menu -->
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+          data-target="#navb">
+          <i class="ds-menu"></i>
+          <!-- Menu icon -->
+          <div class="md-hide text-primary">
+            <i class="ds-x-circle"></i> اغلاق
+            <!-- Close icon for small screens -->
+          </div>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/white logo.svg" alt="logo" class="green-nav-logo">
+          <!-- Green logo -->
+          <img src="../assets/img/logo.svg" width="120" class="light-nav-logo" alt="logo">
+          <!-- Light logo -->
+        </a>
+      </div>
+
+      <div class="d-flex flex-row order-3" id="right-nav">
+        <ul class="navbar-nav flex-row">
+          <!-- List language for navigation -->
+          <li class="nav-item mobile-hide">
+            <a class="font-weight-bold nav-link" href="javascript:void(0)"> </a>
+          </li>
+
+          <!-- user botton-->
+          <li class="nav-item nav-item-login">
+            <a class="nav-link with-icon main-nav text-nav with-icon">
+              <!-- User icon (green) -->
+              <i class="bi bi-person-fill text-green"></i>
+              <!-- User icon (white) -->
+              <p class="mobile-hide text-primary"> المؤهل الميداني </p>
+            </a>
+            <!-- user menu-->
+            <div id="login-dropdown-menu" class="dropdown-menu dropdown-menu-login p-3" style="display: none;">
+              <ul class="list-group list-group-flush">
+
+                <a href="../login_type.html" class="main-nav list-group-item list-group-item-action logout">
+                  <i class="bi bi-box-arrow-left"></i>
+                  تسجيل الخروج
+                </a>
+              </ul>
+            </div>
+            <!--End user menu-->
+          </li>
+          <!--End user botton-->
+
+          <!-- notification botton-->
+          <li class="nav-item nav-item-notifi">
+            <a class="nav-link with-icon">
+              <i class="bi bi-bell-fill text-green"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">
+                9+ </span>
+
+              <p class="mobile-hide">الإشعارات</p>
+            </a>
+            <!-- notification menu-->
+            <div id="notifi-dropdown-menu" class="dropdown-menu dropdown-menu-notifi p-3" style="display: none;">
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex flex-row">
+                    <img class="p-2" src="../assets/img/proggres.svg" alt="">
+                    <div class="p-2" style="text-align: right;">
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">
+                          <b>تم اضافة طلب جديد برقم تسلسلي</b>
+                          <span class="text-primary"> #2254352</span>
+                        </p>
+                      </div>
+                      <small class="font-body-5"> منذ ساعه </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- End notification menu-->
+          </li>
+          <!-- End notification botton-->
+        </ul>
+      </div>
+
+      <!--  navigation menu-->
+
+      <div class="collapse navbar-collapse order-2" id="navb">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle " href="home.html" id="navbarDropdown4">
+              الرئيسية
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle active" href=" " id="navbarDropdown4">
+              طلب جديد
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!--  End navigation menu-->
+    </div>
+  </nav>
+  <!-- End navigation bar -->
+  <div style="margin-top: 80px;">
+    <nav class="ds-nav mobile-hide">
+      <div class="container ">
+        <ol class="breadcrumb">
+
+          <li class="breadcrumb-item">
+            <a href="home.html"> الرئيسية </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="new-order.html"> طلب جديد </a>
+          </li>
+
+        </ol>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Start  main content -->
+  <main class="container-fluid  p-0 top-m">
+    <div class="container mt-5 px-4">
+      <div>
+        <!-- Questions screen containing order details and questions -->
+        <div id="questions-screen" class="screen">
+
+          <!-- User and order details -->
+          <div class="col-md-10 col-sm-12 p-0 mobile-hide">
+            <!-- Image with circular border -->
+            <img src="../assets/img/report.png" alt="" width="100" height="100" class="border rounded-circle img-user">
+
+            <!-- Order title -->
+            <p class="text-gray mt-3" style="font-size: 22px;">مطابخ الامل</p>
+
+            <!-- Order number and visitor name -->
+            <span class="ds-tag--gray text-nowrap">رقم الرخصة : 143421</span>
+            <span class="ds-tag--blue text-nowrap">
+              <i class="bi bi-person-vcard pr-2" style="font-size: 16px;"></i>
+              مؤهل الزيارة: احمد صالح العنزي
+            </span>
+          </div>
+
+          <!-- Progress bar for question progress -->
+          <div class="progress-bar-container my-3">
+            <div class="dash-container">
+              <!-- Dashes representing the progress -->
+              <div class="dash">
+                <div id="dash-0" class="dash-filled"></div>
+              </div>
+              <div class="dash">
+                <div id="dash-1" class="dash-filled"></div>
+              </div>
+              <div class="dash">
+                <div id="dash-2" class="dash-filled"></div>
+              </div>
+              <div class="dash">
+                <div id="dash-3" class="dash-filled"></div>
+              </div>
+              <div class="dash">
+                <div id="dash-4" class="dash-filled"></div>
+              </div>
+            </div>
+            <span id="question-count">1/5</span>
+          </div>
+
+          <!-- First question container -->
+          <div class="question-container active">
+            <small class="mb-3 text-green-light">الرقم التسلسلي: 001</small>
+            <h3 class="text-secondary text-q">الطاقة الاستيعابية بموقع الطبخ للفترة الواحدة بالمطبخ</h3>
+
+            <!-- Input field for kitchen space -->
+            <div class="col-lg-6 my-3 data-item p-0">
+              <p class="data-label">المساحة الكلية للمطبخ</p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" placeholder="132 متر">
+            </div>
+
+            <!-- Output of capacity calculation -->
+            <p>الطاقة الاستيعابية = 1980 <small class="text-green-light">وجبة \ الفترة الواحدة</small></p>
+          </div>
+
+          <!-- Additional question containers -->
+          <!-- Question 2 -->
+          <div class="question-container">
+            <small class="mb-3 text-green-light">الرقم التسلسلي: 002</small>
+            <h3 class="text-secondary text-q">الطاقة الاستيعابية بموقع الطبخ بالمشاعر المقدسة للفترة الواحدة</h3>
+
+            <div class="col-lg-6 my-3 data-item p-0">
+              <p class="data-label">المساحة الكلية للمطبخ</p>
+              <input class="ds-text-input text-gray-bus p-3 rounded-field" placeholder="62 متر">
+            </div>
+
+            <p>الطاقة الاستيعابية = 1550 <small class="text-green-light">وجبة \ الفترة الواحدة</small></p>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="question-container">
+            <small class="mb-3 text-green-light">الرقم التسلسلي: 003</small>
+            <h3 class="text-secondary text-q">هل التصميم الداخلي لألقسام يتوافق مع سهولة وانسيابية تداول المادة الغذائية
+              بشكل آمن؟</h3>
+
+            <!-- Radio button options -->
+            <div class="mb-3 mt-4">
+              <input type="radio" class="ds-radio-input" name="RadioDefault" id="RadioDefault1" checked>
+              <label for="RadioDefault1" class="ds-radio-label"><span class="ds-radio-button"></span> نعم </label>
+            </div>
+
+            <div class="mb-3">
+              <input type="radio" class="ds-radio-input" name="RadioDefault2" id="RadioDefault2">
+              <label for="RadioDefault2" class="ds-radio-label"><span class="ds-radio-button"></span> لا </label>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="question-container">
+            <small class="mb-3 text-green-light">الرقم التسلسلي: 004</small>
+            <h3 class="text-secondary text-q">هل المنشأة في دور أرضي أو دور ميزانين أو أدوار متكررة بشرط وجود الطبخ
+              بالدور الأرضي فقط؟</h3>
+
+            <!-- Radio button options -->
+            <div class="mb-3 mt-4">
+              <input type="radio" class="ds-radio-input" name="RadioDefault" id="RadioDefault1" checked>
+              <label for="RadioDefault1" class="ds-radio-label"><span class="ds-radio-button"></span> نعم </label>
+            </div>
+
+            <div class="mb-3">
+              <input type="radio" class="ds-radio-input" name="RadioDefault2" id="RadioDefault2">
+              <label for="RadioDefault2" class="ds-radio-label"><span class="ds-radio-button"></span> لا </label>
+            </div>
+          </div>
+
+          <!-- Success message -->
+          <div class="question-container align-content-center text-center">
+            <i class="ds-check-circle h1" style="font-size: 90px; color: #2a8a59;"></i>
+            <h3 class="pt-4 text-green mb-3">تم رفع الطلب بنجاح</h3>
+            <p>رقم الطلب #43421</p>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="d-flex justify-content-between mt-4 px-md-0 px-4 bottom-div">
+            <button id="next-btn" class="btn btn-primary"><i class="bi bi-chevron-right"></i> التالي</button>
+            <button id="prev-btn" class="btn btn-secondary" disabled>السابق</button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ID Entry Screen -->
+      <div id="id-entry-screen" class="screen active">
+        <h2 data-aos="fade-up" data-aos-duration="900"> طلب تأهيل جديد</h2>
+        <div class="col-lg-6 my-3 data-item p-0 " style="height: 58vh;" data-aos="fade-up" data-aos-delay="300"
+          data-aos-duration="1000">
+          <h3 class=" text-secondary text-q">
+            رقم الرخصة
+          </h3>
+          <input id="user-id" class="ds-text-input text-gray-bus p-3 rounded-field" placeholder="    ">
+          <small class="mb-3 text-green-light "> ادخل رقم الرخصة حتى يتم التحقق منها ! </small>
+        </div>
+
+        <div class="bottom-div">
+          <button id="check-id-btn" class=" btn btn-primary w-100 w-md-auto ">
+            تحقق
+            <i class="ds-check-circle  "></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- User Info Screen displaying customer and site information -->
+      <div id="user-info-screen" class="screen">
+
+        <!-- User details -->
+        <div class="col-md-10 col-sm-12 p-0 mobile-hide">
+          <!-- Image with circular border -->
+          <img src="../assets/img/report.png" alt="" width="100" height="100" class="border rounded-circle img-user">
+
+          <!-- Order title -->
+          <p class="text-gray mt-3" style="font-size: 22px;">مطابخ الامل</p>
+
+          <!-- License number -->
+          <span class="ds-tag--gray text-nowrap">رقم الرخصة: 143421</span>
+        </div>
+
+        <!-- Container for customer and site details -->
+        <div class="my-3" style="height: 54vh;">
+          <br>
+          <div class="row">
+
+            <!-- Customer details section -->
+            <div class="col-lg-4 col-12 mb-3 aos-init aos-animate" data-aos="zoom-in-up" data-aos-delay="100">
+              <div class="p-4 border rounded hbg-gray">
+                <h5 class="mb-5">بيانات العميل</h5>
+                <div class="row">
+                  <!-- Customer information fields -->
+                  <div class="col-6 mb-4">اسم المحل</div>
+                  <div class="col-6 mb-4">الامل لمطابخ الاعاشة</div>
+                  <div class="col-6 mb-4">رقم الرخصة</div>
+                  <div class="col-6 mb-4" id="display-id"></div>
+                  <div class="col-6 mb-4">حالة الرخصة</div>
+                  <div class="col-6 mb-4">منتهية</div>
+                  <div class="col-6 mb-4">رقم السجل التجاري</div>
+                  <div class="col-6 mb-4">11045322246</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Site details section -->
+            <div class="col-lg-4 col-12 mb-3 aos-init aos-animate" data-aos="zoom-in-up" data-aos-delay="200">
+              <div class="p-4 border rounded h-100 hbg-gray">
+                <h5 class="mb-5">تفاصيل الموقع</h5>
+                <div class="row">
+                  <!-- Site location information -->
+                  <div class="col-4 mb-4">البلدية</div>
+                  <div class="col-8 mb-4">بلدية الشوقية</div>
+                  <div class="col-4 mb-4">الشارع</div>
+                  <div class="col-8 mb-4">الدائري الرابع</div>
+                  <div class="col-4 mb-4">الموقع</div>
+                  <div class="col-8 mb-4">7523، 2491، الشوقية، مكة 24352</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Button to proceed to questions -->
+        <div class="bottom-div">
+          <button id="start-questions-btn" class="btn btn-primary w-md-auto">
+            <i class="bi bi-chevron-right"></i> التالي
+          </button>
+        </div>
+
+      </div>
+
+
+
+      <!-- Navigation -->
+
+    </div>
+
+
+
+
+  </main>
+  <!-- End  main content -->
+
+  <!-- start footer  -->
+  <footer class="ds-footer mt-5 mobile-hide">
+    <div class="ds-footer-container ">
+      <div class="ds-footer-policy p-2 container">
+        <div class="p-2 bd-highlight m-0">
+          <!-- logo   -->
+          <img src="../assets/img/white logo.svg" style="width: 130px" alt="" />
+
+          <img src="../assets/img/Saudi_Vision_2030_logo.svg.png" style="width: 60px !important ;"
+            class="logo-white px-2" alt="" />
+        </div>
+
+        <div class="p-2 bd-highlight my-0">
+          <a href="">شروط الإستخدام</a>
+        </div>
+        <div class="p-2 bd-highlight">
+          <span> تطوير و تشغيل - الوكالة المساعدة للتحول الرقمي </span>
+        </div>
+        <!-- copyright -->
+        <div class="p-2 bd-highlight">
+          <span> امانة العاصمة المقدسة © 2024 </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer  -->
+
+
+
+
+
+
+  <!-- AOS (Animate on Scroll) library for scroll animations -->
+  <script src="../assets/js/aos.js"></script>
+
+  <!-- Bootstrap JavaScript bundle with Popper for responsive components -->
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript for DS components -->
+  <script src="../assets/js/nds-ds.js"></script>
+
+  <!-- Highlight.js for syntax highlighting (if used) -->
+  <script src="../assets/js/highlight.min.js"></script>
+
+  <!-- Main custom JavaScript file -->
+  <script src="../assets/js/main-js"></script>
+
+   <script>
+   // Initial variable setup
+  let currentQuestion = 0;
+  const totalQuestions = document.querySelectorAll('.question-container').length; // Total number of questions
+  const questionCount = document.getElementById('question-count'); // Element showing the question number
+  const prevBtn = document.getElementById('prev-btn'); // Previous button
+  const nextBtn = document.getElementById('next-btn'); // Next button
+  const idEntryScreen = document.getElementById('id-entry-screen'); // ID entry screen
+  const userInfoScreen = document.getElementById('user-info-screen'); // User info screen
+  const questionsScreen = document.getElementById('questions-screen'); // Questions screen
+  const checkIdBtn = document.getElementById('check-id-btn'); // Button to check user ID
+  const startQuestionsBtn = document.getElementById('start-questions-btn'); // Button to start questions
+  const userIdInput = document.getElementById('user-id'); // User ID input field
+  const displayId = document.getElementById('display-id'); // Display ID field
+
+  // Function to update UI elements like the question display, progress bar, and buttons
+  function updateUI() {
+    document.querySelectorAll('.question-container').forEach((question, index) => {
+      question.classList.remove('active');
+      if (index === currentQuestion) {
+        question.classList.add('active'); // Only show the current question
+      }
+    });
+
+    // Update progress dashes with animation
+    for (let i = 0; i < totalQuestions; i++) {
+      const dashFilled = document.getElementById(`dash-${i}`);
+      dashFilled.style.width = i <= currentQuestion ? "100%" : "0%"; // Fill progress up to current question
+    }
+
+    // Update question count display
+    questionCount.textContent = `${currentQuestion + 1}/${totalQuestions}`;
+
+    // Enable/Disable prev/next buttons
+    prevBtn.disabled = currentQuestion === 0;
+    nextBtn.disabled = currentQuestion === totalQuestions - 1;
+  }
+
+  // Event listener for checking user ID and showing the user info screen
+  checkIdBtn.addEventListener('click', () => {
+    const userId = userIdInput.value.trim();
+    if (userId) {
+      displayId.textContent = userId;
+      idEntryScreen.classList.remove('active');
+      userInfoScreen.classList.add('active');
+    }
+  });
+
+  // Event listener for starting the questions after user info screen
+  startQuestionsBtn.addEventListener('click', () => {
+    userInfoScreen.classList.remove('active');
+    questionsScreen.classList.add('active');
+    updateUI();
+  });
+
+  // Event listener for moving to the next question
+  nextBtn.addEventListener('click', () => {
+    if (currentQuestion < totalQuestions - 1) {
+      currentQuestion++;
+      updateUI();
+    }
+  });
+
+  // Event listener for moving to the previous question
+  prevBtn.addEventListener('click', () => {
+    if (currentQuestion > 0) {
+      currentQuestion--;
+      updateUI();
+    }
+  });
+  </script>
+  <!-- Animation  script -->
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

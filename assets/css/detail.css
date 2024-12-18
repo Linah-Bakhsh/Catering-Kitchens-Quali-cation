@@ -1,0 +1,207 @@
+.ds-fileupload {
+    max-width: none !important;
+
+    border-radius: 10px;
+    border: none !important;
+}
+
+.dropSection {
+    border-radius: 10px;
+    align-content: center;
+    border: 1px dashed #bfc5c2 !important;
+}
+
+.text-left {
+    text-align-last: end;
+}
+
+.text-gray-bus {
+    border-radius: 10px !important;
+}
+
+.text-regular {
+    font-weight: 400 !important;
+}
+
+
+.user-data {
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16) !important;
+    border: none !important;
+}
+
+.card-header {
+    border-radius: 10px 10px 0px 0px !important;
+    border: none !important;
+}
+
+.data-label {
+    font-weight: 500;
+    color: #747474;
+
+}
+
+.card-title {
+    font-size: 20px !important;
+}
+
+
+.text-gray-bus {
+    color: #3ba077 !important;
+    background: #fafafa  !important;
+    border-radius: 10%;
+}
+
+.text-gray-bus-description {
+    color: #707070 !important;
+    background-color: rgb(247, 247, 247, 1) !important;
+}
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.data-label-case {
+    background-color: #34a174;
+    color: white;
+}
+ 
+.text-gray-bus-td {
+    background-color: #f8f8f8 !important;
+}
+
+
+.bg-graylight {
+    background: #FAFAFA !important;
+}
+
+.ds-navigation-menu>ul>li {
+    border: 0px !important;
+}
+
+.data-label {
+    font-size: 16px;
+    color: #747474;
+}
+
+.ls-g {
+
+    border: 0px !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    border-radius: 0% !important;
+    color: #aab1bb;
+
+
+}
+
+.list-group-item.active {
+
+    background-color: transparent !important;
+    color: black;
+
+    border-right: solid #DFBD69 10px !important;
+
+
+}
+
+
+.list-group-item.mobile-list {
+
+    border: 1px solid rgba(0, 0, 0, 0.125) !important;
+    color: #747474;
+
+
+}
+
+.mobile-list.active {
+    border-bottom: solid #DFBD69 10px !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
+    font-weight: 700 !important;
+    background: #FAFAFA !important;
+
+
+}
+
+.ds-text-input::placeholder {
+    color: #1f1f1f;
+
+
+
+
+}
+
+.ds-text-input::placeholder {
+
+    background-color: #FAFAFA !important;
+
+}
+
+[dir] .ds-text-input:disabled {
+    border: 0.2px solid #b4b4b452 !important;
+
+}
+
+.text-lightgray {
+    color: #aab1bb;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card-icon {
+        font-size: 30px !important;
+    }
+
+    .num {
+        font-size: 35px !important;
+    }
+
+    .font-body-2 {
+        font-size: 14px !important;
+    }
+
+  
+
+  
+
+    .user-data {
+        padding: 0px;
+        margin: 0px !important;
+        border-radius: 0px !important;
+    }
+
+    .text-left {
+        text-align-last: start;
+    }
+}
+
+#buttonText{
+    font-size: 16px;
+}
+ 
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2F544F;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1500;
+}
+ 

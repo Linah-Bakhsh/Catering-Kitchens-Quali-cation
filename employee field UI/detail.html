@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico" />
+  <title> تفاصيل الطلب </title>
+
+  <!-- basic css -->
+  <link href="../assets/css/nds-ds.css" rel="stylesheet" />
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/detail.css" rel="stylesheet" />
+
+
+  <!-- animation -->
+  <link href="../assets/css/animate.min.css" rel="stylesheet" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+
+  <!-- animation by scrolling -->
+  <link rel="stylesheet" href="../assets/css/aos.css" />
+
+</head>
+
+
+
+<body>
+
+
+ <!-- mobile nav -->
+
+ <nav class="custom-navbar navbar-expand fixed-bottom">
+  <div class="container position-relative justify-content-between d-flex">
+    <!-- Link to home page with icon -->
+    <a class="custom-nav-link active px-2" href="new-order.html">
+      <i class="bi bi-house-door"></i> الرئيسية
+    </a>
+
+    <!-- Link to logout page with icon -->
+    <a class="custom-nav-link" href="login.html">
+      <i class="bi bi-box-arrow-right"></i> تسجيل خروج
+    </a>
+
+    <!-- Centered circle button for creating a new order -->
+    <div class="center-item">
+      <a class="custom-circle" href="new-order.html">
+        <i class="bi bi-plus-circle-fill"></i> <!-- Plus icon -->
+        طلب جديد
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Start  navigation bar -->
+<nav class="navbar navbar-expand-lg ds-header sticky bg-white">
+  <div class="container">
+    <div class="d-flex">
+      <!-- Button for toggling the navigation menu -->
+      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+        data-target="#navb">
+        <i class="ds-menu"></i>
+        <!-- Menu icon -->
+        <div class="md-hide text-primary">
+          <i class="ds-x-circle"></i> اغلاق
+          <!-- Close icon for small screens -->
+        </div>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="../assets/img/white logo.svg" alt="logo" class="green-nav-logo">
+        <!-- Green logo -->
+        <img src="../assets/img/logo.svg" width="120" class="light-nav-logo" alt="logo">
+        <!-- Light logo -->
+      </a>
+    </div>
+
+    <div class="d-flex flex-row order-3" id="right-nav">
+      <ul class="navbar-nav flex-row">
+        <!-- List language for navigation -->
+        <li class="nav-item mobile-hide">
+          <a class="font-weight-bold nav-link" href="javascript:void(0)"> </a>
+        </li>
+
+        <!-- user botton-->
+        <li class="nav-item nav-item-login">
+          <a class="nav-link with-icon main-nav text-nav with-icon">
+            <!-- User icon (green) -->
+            <i class="bi bi-person-fill text-green"></i>
+            <!-- User icon (white) -->
+            <p class="mobile-hide text-primary"> المؤهل الميداني </p>
+          </a>
+          <!-- user menu-->
+          <div id="login-dropdown-menu" class="dropdown-menu dropdown-menu-login p-3" style="display: none;">
+            <ul class="list-group list-group-flush">
+
+              <a href="../login_type.html" class="main-nav list-group-item list-group-item-action logout">
+                <i class="bi bi-box-arrow-left"></i>
+                تسجيل الخروج
+              </a>
+            </ul>
+          </div>
+          <!--End user menu-->
+        </li>
+        <!--End user botton-->
+
+        <!-- notification botton-->
+        <li class="nav-item nav-item-notifi">
+          <a class="nav-link with-icon">
+            <i class="bi bi-bell-fill text-green"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger text-white">
+              9+ </span>
+
+            <p class="mobile-hide">الإشعارات</p>
+          </a>
+          <!-- notification menu-->
+          <div id="notifi-dropdown-menu" class="dropdown-menu dropdown-menu-notifi p-3" style="display: none;">
+            <div class="list-group list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex flex-row">
+                  <img class="p-2" src="../assets/img/proggres.svg" alt="">
+                  <div class="p-2" style="text-align: right;">
+                    <div class="d-flex w-100 justify-content-between">
+                      <p class="mb-1">
+                        <b>تم اضافة طلب جديد برقم تسلسلي</b>
+                        <span class="text-primary"> #2254352</span>
+                      </p>
+                    </div>
+                    <small class="font-body-5"> منذ ساعه </small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End notification menu-->
+        </li>
+        <!-- End notification botton-->
+      </ul>
+    </div>
+
+    <!--  navigation menu-->
+
+    <div class="collapse navbar-collapse order-2" id="navb">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle " href="home.html" id="navbarDropdown4">
+            الرئيسية
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle " href=" " id="navbarDropdown4">
+            طلب جديد
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <!--  End navigation menu-->
+  </div>
+</nav>
+
+  <!--  breadcrumb  -->
+  <nav class="ds-nav" style="margin-top: 80px;">
+    <div class="container">
+      <ol class="breadcrumb">
+
+        <li class="breadcrumb-item">
+          <a href="home.html"> الرئيسية </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="detail.html"> تفاصيل الطلب </a>
+        </li>
+
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Start  main content -->
+
+  <!-- Inner container with welcome message -->
+  <div class=" ">
+    <div class="container px-0 py-5 welcom-ms ">
+
+      <!-- Row for order details, image, and metadata -->
+      <div class="row m-0 border rounded p-4" data-aos="zoom-in-up" data-aos-delay="0">
+
+        <!-- Column for image, order number, date, and visitor information -->
+        <div class="col-md-10 col-sm-12 p-0">
+          <!-- Image with circular border and fixed size -->
+          <img src="../assets/img/report.png" alt="" width="100" height="100" class="border rounded-circle img-user">
+
+          <!-- Order number -->
+          <p class="text-gray mt-3" style="font-size: 22px;">
+            طلب رقم #2451515
+          </p>
+
+          <!-- Order date and visitor name -->
+          <span class="ds-tag--gray text-nowrap">
+            تاريخ الطلب : 1445-05-21
+          </span>
+          <span class="ds-tag--blue text-nowrap ">
+            <i class="bi bi-person-vcard pr-2" style="font-size: 16px;"></i>
+            مؤهل الزيارة: احمد صالح العنزي
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Second section with customer details, site details, and qualification score -->
+  <div class="container px-0">
+
+    <div class="row m-0">
+      
+      <!-- Column  customer details -->
+      <div class="col-lg-4 col-12 mb-3" data-aos="zoom-in-up" data-aos-delay="100">
+        <div class="p-4 border rounded hbg-gray">
+          <h5 class="mb-5"> بيانات العميل </h5>
+          <div class="row">
+            <!-- Customer info fields like store name, license number, etc. -->
+            <div class="col-6 mb-4"> اسم المحل </div>
+            <div class="col-6 mb-4"> الامل لمطابخ الاعاشة </div>
+            <div class="col-6 mb-4"> رقم الرخصة </div>
+            <div class="col-6 mb-4"> 32542352 </div>
+            <div class="col-6 mb-4"> حالة الرخصة</div>
+            <div class="col-6 mb-4"> منتهية </div>
+            <div class="col-6 mb-4"> رقم السجل التجاري </div>
+            <div class="col-6 mb-4"> 11045322246 </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column  site details -->
+      <div class="col-lg-4 col-12 mb-3" data-aos="zoom-in-up" data-aos-delay="200">
+        <div class="p-4 border rounded h-100 hbg-gray">
+          <h5 class="mb-5"> تفاصيل الموقع </h5>
+          <div class="row">
+            <!-- Site info like municipality, street, and location -->
+            <div class="col-4 mb-4"> البلدية </div>
+            <div class="col-8 mb-4"> بلدية الشوقية </div>
+            <div class="col-4 mb-4"> الشارع </div>
+            <div class="col-8 mb-4"> الدائري الرابع </div>
+            <div class="col-4 mb-4"> الموقع </div>
+            <div class="col-8 mb-4"> 7523، 2491، الشوقية، مكة 24352 </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column   qualification score -->
+      <div class="col-lg-4 col-12 mb-3" data-aos="zoom-in-up" data-aos-delay="300">
+        <div class="p-4 border rounded h-100 hbg-gray text-center">
+          <!-- Display qualification percentage -->
+          <h5 class="mb-5" style="text-align: right;"> نسبة التأهيل </h5>
+          <div class="d-flex justify-content-center">
+            <h1 class="ds-display-font text-danger pt-4 pr-3">%</h1>
+            <h1 class="ds-display-font text-danger pt-4 statistic">70</h1>
+          </div>
+          <p class="text-gray"> 140 نقطة من اصل 200 </p>
+        </div>
+      </div>
+
+
+      <!-- Column   qualification questions -->
+
+        <div class="col-lg-8 col-12 mb-3" data-aos="zoom-in-up" data-aos-delay="400" >
+
+          <div class="p-4  border rounded h-100   ">
+
+            <h5 class="mb-5  " style="text-align: right;"> معايير التقييم </h5>
+
+            <!--  Q -->
+            <div class="ds-service-results  " tabindex="0">
+              <small class="mb-3 text-green-light"> الرقم التسلسلي: 001 </small>
+              <p>
+                هل تم توفير مولد كهربائي احتياطي؟
+              </p>
+              <div class="ds-card-footer">
+
+                <span class="mr-3">
+                  الاجابة: لا
+                </span>
+                <button class="ds-tag--danger"> نقاط التأهيل: -1</button>
+
+              </div>
+            </div>
+            <!-- end Q -->
+
+            <!--  Q -->
+            <div class="ds-service-results mt-3 " tabindex="0">
+              <small class="mb-3 text-green-light"> الرقم التسلسلي: 002 </small>
+              <p>
+                هل المنشأة في دور أرضي أو دور ميزانين أو أدوار متكررة بشرط وجود الطبخ بالدور األرضي فقط
+              </p>
+              <div class="ds-card-footer">
+
+                <span class="mr-3">
+                  الاجابة: نعم
+                </span>
+                <button class="ds-tag--green"> نقاط التأهيل: +1</button>
+
+              </div>
+            </div>
+            <!-- end Q -->
+
+            <!--  Q -->
+            <div class="ds-service-results mt-3 " tabindex="0">
+              <small class="mb-3 text-green-light"> الرقم التسلسلي: 003 </small>
+              <p>
+                هل التصميم الداخلي لألقسام يتوافق مع سهولة وانسيابية تداول المادة الغذائية بشكل آمن ابتداء من استلام
+                المواد الغذائية حتى تخزين الوجبات الجاهزة أوغير الجاهزة للأكل وما يرافقها ؟
+
+              </p>
+              <div class="ds-card-footer">
+
+                <span class="mr-3">
+                  الاجابة: لا
+                </span>
+                <button class="ds-tag--danger"> نقاط التأهيل: -1</button>
+
+              </div>
+            </div>
+            <!-- end Q -->
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      <!-- Column visiting info -->
+
+        <div class="col-lg-4 col-12 mb-3" data-aos="zoom-in-up" data-aos-delay="500" >
+          <div class="p-4  border rounded   text-center ">
+            <h5 class="mb-5  " style="text-align: right;"> سجل الزيارات </h5>
+
+
+            <div class="d-flex justify-content-between bg-graylight py-1">
+              <small class="p-2 text-gray"> 2024-09-11 </small>
+              <small class="p-2 text-gray">
+                <i class="bi bi-person-circle" style="font-size: 16px;"></i>
+                احمد صالح العنزي </small>
+              <small class="p-2">
+                <i class="bi bi-eye-fill text-green" style="font-size: 18px;"></i>
+
+              </small>
+            </div>
+
+            <div class="d-flex justify-content-between py-1 ">
+              <small class="p-2 text-gray"> 2024-09-11 </small>
+              <small class="p-2 text-gray">
+                <i class="bi bi-person-circle" style="font-size: 16px;"></i>
+                احمد صالح العنزي </small>
+              <small class="p-2">
+                <i class="bi bi-eye-fill text-green" style="font-size: 18px;"></i>
+
+              </small>
+            </div>
+
+            <div class="d-flex justify-content-between py-1 bg-graylight">
+              <small class="p-2 text-gray"> 2024-09-11 </small>
+              <small class="p-2 text-gray">
+                <i class="bi bi-person-circle" style="font-size: 16px;"></i>
+                احمد صالح العنزي </small>
+              <small class="p-2">
+                <i class="bi bi-eye-fill text-green" style="font-size: 18px;"></i>
+
+              </small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </main>
+
+
+
+  <footer class="ds-footer">
+    <div class="ds-footer-container">
+      <div class="ds-footer-policy p-2 container">
+        <div class="p-2 bd-highlight m-0">
+          <!-- logo   -->
+          <img src="../assets/img/ds-white-logo.svg" style="width: 130px;" alt="" />
+
+          <img src="../assets/img/Saudi_Vision_2030_logo.svg.png" style="width: 60px;" class="logo-white px-2" alt="" />
+        </div>
+
+        <div class="p-2 bd-highlight my-0">
+          <a href="">شروط الإستخدام</a>
+        </div>
+        <div class="p-2 bd-highlight">
+          <span>تطوير و تشغيل - الوكالة المساعدة للتحول الرقمي</span>
+        </div>
+        <!-- copyright -->
+        <div class="p-2 bd-highlight">
+          <span> امانة العاصمة المقدسة © 2024 </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="../assets/js/aos.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/nds-ds.js"></script>
+  <script src="../assets/js/highlight.min.js"></script>
+  <script src="../assets/js/main-js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/countUp.min.js"></script>
+
+  <script>
+    // These are the options that I'm going to be using on each statistic
+    var options = {
+      useEasing: true,
+      useGrouping: true,
+      separator: ",",
+      decimal: "."
+    };
+
+    // Find all Statistics on page, put them inside a variable
+    var statistics = $(".statistic");
+
+    // For each Statistic we find, animate it
+    statistics.each(function (index) {
+      // Find the value we want to animate (what lives inside the p tags)
+      var value = $(statistics[index]).html();
+      // Start animating
+      var statisticAnimation = new CountUp(statistics[index], 0, value, 0, 5, options);
+      statisticAnimation.start();
+    }); 
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
